@@ -1,37 +1,36 @@
 <template>
   <div>
-    <section class="bg-white dark:bg-gray-900">
-      <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
-        <div class="mx-auto max-w-screen-md text-center mb-8 lg:mb-12">
+    <section class="bg-white" id="Pricing">
+      <div class="pt-25 px-4 mx-auto max-w-screen-xl lg:pt-45 lg:px-6">
+        <div class="mx-auto max-w-screen-md text-center mb-10 lg:mb-14">
           <h2
-            class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white"
+            class="mb-4 text-4xl tracking-tight font-semibold text-gray-800"
           >
-            Designed for business teams like yours
+            Designed for everyone<span class="tx-text-primary"> | Businesses, Individuals</span>
           </h2>
-          <p class="mb-5 font-light text-gray-500 sm:text-xl dark:text-gray-400">
-            Here at Flowbite we focus on markets where technology, innovation, and capital
-            can unlock long-term value and drive economic growth.
+          <p class="mb-5 font-light text-gray-600 text-base">
+            Discover our straightforward and competitive pricing options for our services. We believe in transparency and making your financial journey hassle-free.
           </p>
         </div>
         <div class="space-y-8 lg:grid lg:grid-cols-3 sm:gap-6 xl:gap-10 lg:space-y-0">
           <!-- Pricing Card -->
           <div
-            class="flex flex-col p-6 mx-auto max-w-lg text-center text-gray-900 bg-white rounded-lg border border-gray-100 shadow dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white"
+            class="flex flex-col p-6 mx-auto max-w-lg text-center text-gray-900 bg-white rounded-lg border border-gray-100 shadow"
           >
-            <h3 class="mb-4 text-2xl font-semibold">Starter</h3>
-            <p class="font-light text-gray-500 sm:text-lg dark:text-gray-400">
-              Best option for personal use & for your next project.
+            <h3 class="my-4 text-2xl font-semibold">Hydrogen</h3>
+            <p class="font-light text-gray-600 text-base">
+              Best option for personal use and service providers
             </p>
             <div class="flex justify-center items-baseline my-8">
-              <span class="mr-2 text-5xl font-extrabold">$29</span>
-              <span class="text-gray-500 dark:text-gray-400">/month</span>
+              <span class="mr-2 text-5xl font-bold">₦10k</span>
+              <span class="text-gray-600">/month</span>
             </div>
             <!-- List -->
             <ul role="list" class="mb-8 space-y-4 text-left">
               <li class="flex items-center space-x-3">
                 <!-- Icon -->
                 <svg
-                  class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400"
+                  class="flex-shrink-0 w-5 h-5 text-green-500"
                   fill="currentColor"
                   viewBox="0 0 20 20"
                   xmlns="http://www.w3.org/2000/svg"
@@ -42,12 +41,12 @@
                     clip-rule="evenodd"
                   ></path>
                 </svg>
-                <span>Individual configuration</span>
+                <span>Access to personal wallet + NUBAN</span>
               </li>
               <li class="flex items-center space-x-3">
                 <!-- Icon -->
                 <svg
-                  class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400"
+                  class="flex-shrink-0 w-5 h-5 text-green-500"
                   fill="currentColor"
                   viewBox="0 0 20 20"
                   xmlns="http://www.w3.org/2000/svg"
@@ -58,12 +57,12 @@
                     clip-rule="evenodd"
                   ></path>
                 </svg>
-                <span>No setup, or hidden fees</span>
+                <span>Bill payment services</span>
               </li>
               <li class="flex items-center space-x-3">
                 <!-- Icon -->
                 <svg
-                  class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400"
+                  class="flex-shrink-0 w-5 h-5 text-green-500"
                   fill="currentColor"
                   viewBox="0 0 20 20"
                   xmlns="http://www.w3.org/2000/svg"
@@ -74,12 +73,12 @@
                     clip-rule="evenodd"
                   ></path>
                 </svg>
-                <span>Team size: <span class="font-semibold">1 developer</span></span>
+                <span>Number of sub accounts: <span class="font-semibold">0</span></span>
               </li>
               <li class="flex items-center space-x-3">
                 <!-- Icon -->
                 <svg
-                  class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400"
+                  class="flex-shrink-0 w-5 h-5 text-green-500"
                   fill="currentColor"
                   viewBox="0 0 20 20"
                   xmlns="http://www.w3.org/2000/svg"
@@ -90,12 +89,12 @@
                     clip-rule="evenodd"
                   ></path>
                 </svg>
-                <span>Premium support: <span class="font-semibold">6 months</span></span>
+                <span>Mode of support: <span class="font-semibold">Normal</span></span>
               </li>
               <li class="flex items-center space-x-3">
                 <!-- Icon -->
                 <svg
-                  class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400"
+                  class="flex-shrink-0 w-5 h-5 text-green-500"
                   fill="currentColor"
                   viewBox="0 0 20 20"
                   xmlns="http://www.w3.org/2000/svg"
@@ -106,35 +105,28 @@
                     clip-rule="evenodd"
                   ></path>
                 </svg>
-                <span>Free updates: <span class="font-semibold">6 months</span></span>
+                <span>Transaction Sync: <span class="font-semibold">6 </span>per month</span>
               </li>
             </ul>
-            <a
-              href="#"
-              class="text-white bg-primary-600 hover:bg-primary-700 focus:ring-4 focus:ring-primary-200 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:text-white dark:focus:ring-primary-900"
-              >Get started</a
-            >
           </div>
           <!-- Pricing Card -->
           <div
-            class="flex flex-col p-6 mx-auto max-w-lg text-center text-gray-900 bg-white rounded-lg border border-gray-100 shadow dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white"
+            class="flex flex-col p-6 mx-auto max-w-lg text-center text-gray-900 bg-white rounded-lg border border-gray-100 shadow"
           >
-            <h3 class="mb-4 text-2xl font-semibold">Company</h3>
-            <p class="font-light text-gray-500 sm:text-lg dark:text-gray-400">
-              Relevant for multiple users, extended & premium support.
+            <h3 class="my-4 text-2xl font-semibold">Helium</h3>
+            <p class="font-light text-gray-600 text-base">
+              Relevant for bigger SMEs, extended and premium support.
             </p>
             <div class="flex justify-center items-baseline my-8">
-              <span class="mr-2 text-5xl font-extrabold">$99</span>
-              <span class="text-gray-500 dark:text-gray-400" dark:text-gray-400
-                >/month</span
-              >
+              <span class="mr-2 text-5xl font-bold">₦25k</span>
+              <span class="text-gray-600">/month</span>
             </div>
             <!-- List -->
             <ul role="list" class="mb-8 space-y-4 text-left">
               <li class="flex items-center space-x-3">
                 <!-- Icon -->
                 <svg
-                  class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400"
+                  class="flex-shrink-0 w-5 h-5 text-green-500"
                   fill="currentColor"
                   viewBox="0 0 20 20"
                   xmlns="http://www.w3.org/2000/svg"
@@ -145,12 +137,12 @@
                     clip-rule="evenodd"
                   ></path>
                 </svg>
-                <span>Individual configuration</span>
+                <span>Access to personal wallet + NUBAN</span>
               </li>
               <li class="flex items-center space-x-3">
                 <!-- Icon -->
                 <svg
-                  class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400"
+                  class="flex-shrink-0 w-5 h-5 text-green-500"
                   fill="currentColor"
                   viewBox="0 0 20 20"
                   xmlns="http://www.w3.org/2000/svg"
@@ -161,12 +153,12 @@
                     clip-rule="evenodd"
                   ></path>
                 </svg>
-                <span>No setup, or hidden fees</span>
+                <span>Bill payment services</span>
               </li>
               <li class="flex items-center space-x-3">
                 <!-- Icon -->
                 <svg
-                  class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400"
+                  class="flex-shrink-0 w-5 h-5 text-green-500"
                   fill="currentColor"
                   viewBox="0 0 20 20"
                   xmlns="http://www.w3.org/2000/svg"
@@ -177,12 +169,12 @@
                     clip-rule="evenodd"
                   ></path>
                 </svg>
-                <span>Team size: <span class="font-semibold">10 developers</span></span>
+                <span>Number of sub accounts: <span class="font-semibold">5</span></span>
               </li>
               <li class="flex items-center space-x-3">
                 <!-- Icon -->
                 <svg
-                  class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400"
+                  class="flex-shrink-0 w-5 h-5 text-green-500"
                   fill="currentColor"
                   viewBox="0 0 20 20"
                   xmlns="http://www.w3.org/2000/svg"
@@ -193,12 +185,12 @@
                     clip-rule="evenodd"
                   ></path>
                 </svg>
-                <span>Premium support: <span class="font-semibold">24 months</span></span>
+                <span>Mode of support: <span class="font-semibold">Premium</span></span>
               </li>
               <li class="flex items-center space-x-3">
                 <!-- Icon -->
                 <svg
-                  class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400"
+                  class="flex-shrink-0 w-5 h-5 text-green-500"
                   fill="currentColor"
                   viewBox="0 0 20 20"
                   xmlns="http://www.w3.org/2000/svg"
@@ -209,33 +201,28 @@
                     clip-rule="evenodd"
                   ></path>
                 </svg>
-                <span>Free updates: <span class="font-semibold">24 months</span></span>
+                <span>Transaction Sync: <span class="font-semibold">6 </span>per month</span>
               </li>
             </ul>
-            <a
-              href="#"
-              class="text-white bg-primary-600 hover:bg-primary-700 focus:ring-4 focus:ring-primary-200 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:text-white dark:focus:ring-primary-900"
-              >Get started</a
-            >
           </div>
           <!-- Pricing Card -->
           <div
-            class="flex flex-col p-6 mx-auto max-w-lg text-center text-gray-900 bg-white rounded-lg border border-gray-100 shadow dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white"
+            class="flex flex-col p-6 mx-auto max-w-lg text-center text-gray-900 bg-white rounded-lg border border-gray-100 shadow"
           >
-            <h3 class="mb-4 text-2xl font-semibold">Enterprise</h3>
-            <p class="font-light text-gray-500 sm:text-lg dark:text-gray-400">
-              Best for large scale uses and extended redistribution rights.
+            <h3 class="my-4 text-2xl font-semibold">Lithium</h3>
+            <p class="font-light text-gray-600 text-base">
+              Best option for large scale uses and premium support
             </p>
             <div class="flex justify-center items-baseline my-8">
-              <span class="mr-2 text-5xl font-extrabold">$499</span>
-              <span class="text-gray-500 dark:text-gray-400">/month</span>
+              <span class="mr-2 text-5xl font-bold">₦100k</span>
+              <span class="text-gray-600">/month</span>
             </div>
             <!-- List -->
             <ul role="list" class="mb-8 space-y-4 text-left">
               <li class="flex items-center space-x-3">
                 <!-- Icon -->
                 <svg
-                  class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400"
+                  class="flex-shrink-0 w-5 h-5 text-green-500"
                   fill="currentColor"
                   viewBox="0 0 20 20"
                   xmlns="http://www.w3.org/2000/svg"
@@ -246,12 +233,12 @@
                     clip-rule="evenodd"
                   ></path>
                 </svg>
-                <span>Individual configuration</span>
+                <span>Access to personal wallet + NUBAN</span>
               </li>
               <li class="flex items-center space-x-3">
                 <!-- Icon -->
                 <svg
-                  class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400"
+                  class="flex-shrink-0 w-5 h-5 text-green-500"
                   fill="currentColor"
                   viewBox="0 0 20 20"
                   xmlns="http://www.w3.org/2000/svg"
@@ -262,12 +249,12 @@
                     clip-rule="evenodd"
                   ></path>
                 </svg>
-                <span>No setup, or hidden fees</span>
+                <span>Bill payment services</span>
               </li>
               <li class="flex items-center space-x-3">
                 <!-- Icon -->
                 <svg
-                  class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400"
+                  class="flex-shrink-0 w-5 h-5 text-green-500"
                   fill="currentColor"
                   viewBox="0 0 20 20"
                   xmlns="http://www.w3.org/2000/svg"
@@ -278,12 +265,12 @@
                     clip-rule="evenodd"
                   ></path>
                 </svg>
-                <span>Team size: <span class="font-semibold">100+ developers</span></span>
+                <span>Number of sub accounts: <span class="font-semibold">Unlimited</span></span>
               </li>
               <li class="flex items-center space-x-3">
                 <!-- Icon -->
                 <svg
-                  class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400"
+                  class="flex-shrink-0 w-5 h-5 text-green-500"
                   fill="currentColor"
                   viewBox="0 0 20 20"
                   xmlns="http://www.w3.org/2000/svg"
@@ -294,12 +281,12 @@
                     clip-rule="evenodd"
                   ></path>
                 </svg>
-                <span>Premium support: <span class="font-semibold">36 months</span></span>
+                <span>Mode of support: <span class="font-semibold">Premium</span></span>
               </li>
               <li class="flex items-center space-x-3">
                 <!-- Icon -->
                 <svg
-                  class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400"
+                  class="flex-shrink-0 w-5 h-5 text-green-500"
                   fill="currentColor"
                   viewBox="0 0 20 20"
                   xmlns="http://www.w3.org/2000/svg"
@@ -310,14 +297,9 @@
                     clip-rule="evenodd"
                   ></path>
                 </svg>
-                <span>Free updates: <span class="font-semibold">36 months</span></span>
+                <span>Transaction Sync: <span class="font-semibold">Unlimited </span>per month</span>
               </li>
             </ul>
-            <a
-              href="#"
-              class="text-white bg-primary-600 hover:bg-primary-700 focus:ring-4 focus:ring-primary-200 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:text-white dark:focus:ring-primary-900"
-              >Get started</a
-            >
           </div>
         </div>
       </div>
