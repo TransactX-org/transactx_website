@@ -6,7 +6,7 @@
           <div class="flex lg:flex-1">
             <NuxtLink href="/" class="-m-1.5 p-1.5">
               <span class="sr-only">TransactX</span>
-              <img class="h-9 w-auto" src="transactx.svg" alt="TransactX Logo" />
+              <img class="h-9 w-auto" src="/transactx.svg" alt="TransactX Logo" />
             </NuxtLink>
           </div>
           <div class="hidden lg:flex lg:gap-x-15">
@@ -51,7 +51,7 @@
           <div class="flex items-center justify-between">
             <NuxtLink href="/" class="-m-1.5 p-1.5">
               <span class="sr-only">TransactX</span>
-              <img class="h-9 w-auto" src="transactx.svg" alt="TransactX Logo" />
+              <img class="h-9 w-auto" src="/transactx.svg" alt="TransactX Logo" />
             </NuxtLink>
             <button
               type="button"

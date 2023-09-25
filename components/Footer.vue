@@ -6,7 +6,7 @@
           <div class="mb-6 md:mb-0">
             <a href="https://flowbite.com" class="flex items-center">
               <img
-                src="transactx.svg"
+                src="/transactx.svg"
                 class="mr-3 h-10"
                 alt="TransactX"
               />

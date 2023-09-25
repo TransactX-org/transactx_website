@@ -18,19 +18,19 @@
             <NuxtLink
                 href="#"
                 class="transition duration-500 ease-in-out rounded-md transform hover:-translate-y-1 hover:scale-110 border-white border-1 tx-bg-primary flex items-center gap-2 px-5 py-3 text-sm font-semibold text-white shadow-sm hover:opacity-90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-none"
-                ><img class="h-5 w-auto" src="apple-icon.svg" alt="App store" />Get on iPhone</NuxtLink
+                ><img class="h-5 w-auto" src="/apple-icon.svg" alt="App store" />Get on iPhone</NuxtLink
               >
 
               <NuxtLink
                 href="#"
                 class="transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 rounded-md tx-bg-secondary flex items-center gap-2 px-5 py-3 text-sm font-semibold text-white shadow-sm hover:transform"
-                ><img class="h-5 w-auto" src="google-icon.svg" alt="Play store" />Get
+                ><img class="h-5 w-auto" src="/google-icon.svg" alt="Play store" />Get
                 on Android</NuxtLink
               >
           </div>
         </div>
         <div class="relative mt-16 h-80 lg:mt-8" data-aos="fade-left" data-aos-delay="1000" data-aos-duration="1000">
-          <img class="absolute left-15 lg:left-0 top-0 w-[17rem] sm:w-[27rem] max-w-none rounded-md bg-white/1 ring-1 ring-white/10" src="request-money.png" alt="TransactX App Screenshot" width="1824" height="1080" />
+          <img class="absolute left-15 lg:left-0 top-0 w-[17rem] sm:w-[27rem] max-w-none rounded-md bg-white/1 ring-1 ring-white/10" src="/request-money.png" alt="TransactX App Screenshot" width="1824" height="1080" />
         </div>
       </div>
     </div>

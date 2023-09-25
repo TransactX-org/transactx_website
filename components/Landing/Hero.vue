@@ -29,13 +29,13 @@
               <NuxtLink
                 href="#"
                 class="transition duration-500 ease-in-out rounded-md transform hover:-translate-y-1 hover:scale-110 tx-bg-primary flex items-center gap-2 px-5 py-3 text-sm font-semibold text-white shadow-sm hover:opacity-90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-none"
-                ><img class="h-5 w-auto" src="apple-icon.svg" alt="App store" />Get on iPhone</NuxtLink
+                ><img class="h-5 w-auto" src="/apple-icon.svg" alt="App store" />Get on iPhone</NuxtLink
               >
 
               <NuxtLink
                 href="#"
                 class="transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 rounded-md tx-bg-secondary flex items-center gap-2 px-5 py-3 text-sm font-semibold text-white shadow-sm hover:transform"
-                ><img class="h-5 w-auto" src="google-icon.svg" alt="Play store" />Get
+                ><img class="h-5 w-auto" src="/google-icon.svg" alt="Play store" />Get
                 on Android</NuxtLink
               >
             </div>
@@ -45,7 +45,7 @@
         <!--  -->
         <div class="w-full lg:w-1/2 flex justify-center">
           <div data-aos="zoom-in" data-aos-duration="2000">
-            <img src="transactx-app-dashboard.png" class="w-full h-auto mt-7xl md:mt-9xl lg:mt--15" alt="">
+            <img src="/transactx-app-dashboard.png" class="w-full h-auto mt-7xl md:mt-9xl lg:mt--15" alt="">
           <!-- <lottie-player src="https://lottie.host/55ba8016-8c77-4b72-af14-7f49b40559ef/dbN2kJAHyX.json" background="transparent" speed="1" class="w-full h-auto mt-7xl md:mt-9xl lg:mt--30" direction="1" mode="normal" loop autoplay></lottie-player> -->
           </div>
         </div>
