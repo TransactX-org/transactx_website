@@ -41,7 +41,7 @@
         <div class="w-full lg:w-1/2 flex justify-center">
           <div data-aos="zoom-in" data-aos-duration="2000">
             <!-- <img src="/transactx-app-dashboard.png" class="w-full h-auto mt-7xl md:mt-9xl lg:mt--15" alt=""> -->
-            <img src="/transactxx.png" class="w-3xl h-auto mt-7xl md:mt-9xl lg:mt--15" alt="">
+            <img src="/transactxx.png" class="w-3xl h-auto mt-7xl md:mt-9xl lg:mt--15" alt="Hero Image">
           </div>
         </div>
       </div>
