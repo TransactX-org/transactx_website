@@ -7,15 +7,15 @@
         <p class="mt-6 text-lg leading-8 text-gray-600">Whether you're looking to streamline your finances, stay on top of bills, or securely manage your personal funds, we got you covered.</p>
       </div>
       <div class="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-6xl">
-        <dl class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16">
-          <div v-for="feature in features" :key="feature.name" class="relative pl-16" data-aos="fade-up" data-aos-duration="2000">
+        <dl class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-14 lg:max-w-none lg:grid-cols-2 lg:gap-y-20">
+          <div v-for="feature in features" :key="feature.name" class="relative pl-20" data-aos="fade-up" data-aos-duration="2000">
             <dt class="text-base font-semibold leading-7 text-gray-900">
-              <div class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg tx-bg-secondary">
-                <component :is="feature.icon" class="h-6 w-6 text-white" aria-hidden="true" />
+              <div class="absolute left-0 top-0 flex h-15 w-15 items-center justify-center rounded-lg tx-bg-secondary">
+                <component :is="feature.icon" class="h-8 w-8 text-white" aria-hidden="true" />
               </div>
               {{ feature.name }}
             </dt>
-            <dd class="mt-2 text-base leading-7 text-gray-700">{{ feature.description }}</dd>
+            <dd class="mt-2 text-base leading-7 text-gray-700 lg:text-justify">{{ feature.description }}</dd>
           </div>
         </dl>
       </div>

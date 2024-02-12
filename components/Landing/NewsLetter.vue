@@ -34,6 +34,3 @@
     </div>
 </template>
 
-<script setup>
-import { CalendarDaysIcon, HandRaisedIcon } from '@heroicons/vue/24/outline'
-</script>

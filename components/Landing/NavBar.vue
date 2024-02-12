@@ -1,6 +1,6 @@
 <template>
   <div class="bg-white">
-    <header class="relative lg:px-20 inset-x-0 top-0 z-50 border-b border-gray-100">
+    <header class="relative lg:px-20 inset-x-0 top-0 z-50">
       <nav class="flex items-center justify-between p-6 lg:px-0" aria-label="Global">
         <div class="flex flex-row items-center gap-8xl">
           <div class="flex lg:flex-1">
@@ -9,12 +9,12 @@
               <img class="h-9 w-auto" src="/transactx.svg" alt="TransactX Logo" />
             </NuxtLink>
           </div>
-          <div class="hidden lg:flex lg:gap-x-15">
+          <div class="hidden lg:flex lg:gap-x-20">
             <NuxtLink
               v-for="item in navigation"
               :key="item.name"
               :href="item.href"
-              class="text-sm leading-6 text-gray-600"
+              class="leading-6 text-gray-800"
               >{{ item.name }}
               </NuxtLink
             >
@@ -33,8 +33,8 @@
         </div>
 
         <div class="hidden lg:flex lg:flex-1 lg:justify-end">
-          <NuxtLink href="#TXToken" class="text-sm font-semibold leading-6 text-gray-900"
-            >Introducing TX token <span aria-hidden="true">&rarr;</span></NuxtLink
+          <NuxtLink href="#TXToken" class="transition duration-500 ease-in-out rounded-md hover:opacity-85 tx-bg-primary px-6 py-3 text-sm text-white shadow-sm"
+            >TX token <span aria-hidden="true">&rarr;</span></NuxtLink
           >
         </div>
       </nav>

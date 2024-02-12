@@ -66,10 +66,10 @@
             >© {{ new Date().getFullYear() }} <NuxtLink href="/" class="hover:underline">TransactX™</NuxtLink>.
              All Rights Reserved.
           </span>
-          <div class="flex mt-4 space-x-10 sm:justify-center sm:mt-0">
+          <div class="flex mt-4 space-x-5 sm:justify-center sm:mt-0">
             <NuxtLink href="#" class="text-gray-500 hover:text-gray-900">
               <svg
-                class="w-5 h-5"
+                class="w-8 h-8"
                 fill="currentColor"
                 viewBox="0 0 24 24"
                 aria-hidden="true"
@@ -83,7 +83,7 @@
             </NuxtLink>
             <NuxtLink href="#" class="text-gray-500 hover:text-gray-900">
               <svg
-                class="w-5 h-5"
+                class="w-8 h-8"
                 fill="currentColor"
                 viewBox="0 0 24 24"
                 aria-hidden="true"
@@ -97,7 +97,7 @@
             </NuxtLink>
             <NuxtLink href="#" class="text-gray-500 hover:text-gray-900">
               <svg
-                class="w-5 h-5"
+                class="w-8 h-8"
                 fill="currentColor"
                 viewBox="0 0 24 24"
                 aria-hidden="true"

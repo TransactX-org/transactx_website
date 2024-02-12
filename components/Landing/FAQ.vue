@@ -27,12 +27,10 @@
                     clip-rule="evenodd"
                   ></path>
                 </svg>
-                What do you mean by "Figma assets"?
+                How does TransactX ensure the security of my transactions?
               </h3>
               <p class="text-gray-500 ">
-                You will have access to download the full Figma project including all of
-                the pages, the components, responsive pages, and also the icons,
-                illustrations, and images included in the screens.
+                TransactX prioritizes the security of your transactions. We employ advanced encryption techniques to safeguard your financial data and utilize secure protocols for all transactions. Additionally, our real-time network status checker helps you confirm the strength of your bank's network before conducting transactions, ensuring a seamless and secure experience.
               </p>
             </div>
             <div class="mb-10">
@@ -51,12 +49,10 @@
                     clip-rule="evenodd"
                   ></path>
                 </svg>
-                What does "lifetime access" exactly mean?
+                Can I sync multiple bank accounts with TransactX?
               </h3>
               <p class="text-gray-500 ">
-                Once you have purchased either the design, code, or both packages, you
-                will have access to all of the future updates based on the roadmap, free
-                of charge.
+                Yes, absolutely. TransactX allows you to sync multiple bank accounts in real-time, providing you with a comprehensive overview of your financial activity across all your accounts, whether you're an individual managing personal finances or a business owner handling transactions for your enterprise.
               </p>
             </div>
             <div class="mb-10">
@@ -75,23 +71,10 @@
                     clip-rule="evenodd"
                   ></path>
                 </svg>
-                How does support work?
+                What services are included in the Bill Payment Service?
               </h3>
               <p class="text-gray-500 ">
-                We're aware of the importance of well qualified support, that is why we
-                decided that support will only be provided by the authors that actually
-                worked on this project.
-              </p>
-              <p class="text-gray-500 ">
-                Feel free to
-                <a
-                  href="#"
-                  class="font-medium underline tx-text-primary hover:no-underline"
-                  target="_blank"
-                  rel="noreferrer"
-                  >contact us</a
-                >
-                and we'll help you out as soon as we can.
+                Our Bill Payment Service covers a wide range of expenses, from essential utilities like electricity and water to entertainment options like airtime top-ups and betting accounts. With TransactX, you can conveniently manage and pay all your bills from different service providers in one place.
               </p>
             </div>
             <div class="mb-10">
@@ -110,22 +93,12 @@
                     clip-rule="evenodd"
                   ></path>
                 </svg>
-                I want to build more than one project. Is that allowed?
+                Is TransactX only suitable for businesses, or can individuals also benefit from it?
               </h3>
               <p class="text-gray-500 ">
-                You can use Windster for an unlimited amount of projects, whether it's a
-                personal website, a SaaS app, or a website for a client. As long as you
-                don't build a product that will directly compete with Windster either as a
-                UI kit, theme, or template, it's fine.
+                TransactX caters to both businesses and individuals. Whether you run a POS business, manage a micro-enterprise, or simply want to streamline your personal finances, our platform offers features tailored to meet your specific needs, including real-time account sync, bill payment services, and secure personal wallets.
               </p>
-              <p class="text-gray-500 ">
-                Find out more information by
-                <a
-                  href="#"
-                  class="font-medium underline tx-text-primary hover:no-underline"
-                  >reading the license</a
-                >.
-              </p>
+          
             </div>
           </div>
           <div>
@@ -145,17 +118,19 @@
                     clip-rule="evenodd"
                   ></path>
                 </svg>
-                What does "free updates" include?
+                What is a NUBAN, and how does it enhance the Personal Wallet experience?
               </h3>
               <p class="text-gray-500 ">
-                The free updates that will be provided is based on the
+                NUBAN stands for Nigerian Uniform Bank Account Number. TransactX's Personal Wallet with a dedicated NUBAN offers enhanced security, speed, and flexibility. Your funds are protected, and transactions are encrypted, ensuring peace of mind. Additionally, you can receive payments, make P2P transactions, pay bills, or withdraw funds to your bank account using your wallet.
+              </p>
+              <br>
+              <p class="text-gray-500 ">
                 <a
-                  href="#"
+                  href="https://www.cbn.gov.ng/out/2010/circulars/bspd/nuban%20proposal%20-%2020091010%20_final%20upload_.pdf"
                   class="font-medium underline tx-text-primary hover:no-underline"
-                  >roadmap</a
-                >
-                that we have laid out for this project. It is also possible that we will
-                provide extra updates outside of the roadmap as well.
+                  >Click here</a
+                > to find more information
+               
               </p>
             </div>
             <div class="mb-10">
@@ -174,21 +149,10 @@
                     clip-rule="evenodd"
                   ></path>
                 </svg>
-                What does the free version include?
+                Can TransactX help with banking the unbanked population?
               </h3>
               <p class="text-gray-500">
-                The
-                <a
-                  href="#"
-                  class="font-medium underline tx-text-primary hover:no-underline"
-                  >free version</a
-                >
-                of Windster includes a minimal style guidelines, component variants, and a
-                dashboard page with the mobile version alongside it.
-              </p>
-              <p class="text-gray-500">
-                You can use this version for any purposes, because it is open-source under
-                the MIT license.
+                Yes, TransactX is committed to banking the unbanked. Our Personal Wallet with a dedicated NUBAN provides a secure and accessible financial solution for individuals who may not have access to traditional banking services. With features like bill payments, P2P transactions, and fund withdrawals, we aim to empower everyone with convenient financial tools.
               </p>
             </div>
             <div class="mb-10">
@@ -207,17 +171,10 @@
                     clip-rule="evenodd"
                   ></path>
                 </svg>
-                What is the difference between Windster and Tailwind UI?
+                How does the Network Strength Tracker prevent failed transactions?
               </h3>
               <p class="text-gray-500">
-                Although both Windster and Tailwind UI are built for integration with
-                Tailwind CSS, the main difference is in the design, the pages, the extra
-                components and UI elements that Windster includes.
-              </p>
-              <p class="text-gray-500">
-                Additionally, Windster is a project that is still in development, and
-                later it will include both the application, marketing, and e-commerce UI
-                interfaces.
+                The Network Strength Tracker is a cutting-edge feature of TransactX that allows you to check the strength of your bank's network in real-time before initiating transactions. By ensuring a stable network connection, it helps prevent failed transactions and minimizes disruptions to your financial activities, providing a hassle-free banking experience.
               </p>
             </div>
             <div class="mb-10">
@@ -236,24 +193,10 @@
                     clip-rule="evenodd"
                   ></path>
                 </svg>
-                Can I use Windster in open-source projects?
+                Is TransactX suitable for millennials and side hustlers?
               </h3>
               <p class="text-gray-500">
-                Generally, it is accepted to use Windster in open-source projects, as long
-                as it is not a UI library, a theme, a template, a page-builder that would
-                be considered as an alternative to Windster itself.
-              </p>
-              <p class="text-gray-500">
-                With that being said, feel free to use this design kit for your
-                open-source projects.
-              </p>
-              <p class="text-gray-500">
-                Find out more information by
-                <a
-                  href="#"
-                  class="font-medium underline tx-text-primary hover:no-underline"
-                  >reading the license</a
-                >.
+                Absolutely! TransactX's Personal Wallet with a dedicated NUBAN caters to millennials and side hustlers, offering security, speed, and flexibility for managing finances. Whether you're a millennial looking for convenient payment options or a side hustler seeking a reliable platform for financial transactions, TransactX has you covered.
               </p>
             </div>
           </div>

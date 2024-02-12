@@ -1,8 +1,8 @@
 <template>
-  <div class="mt-9xl py-10 sm:py-20 bg-gray-1" id="Stories">
+  <div class="mt-9xl py-10 sm:py-20" id="Stories">
     <div class="mx-auto py-10 max-w-7xl px-6 lg:px-5">
       <div class="mx-auto max-w-3xl md:text-center" data-aos="fade-up" data-aos-duration="1000">
-        <p class="mt-2 text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl"><span class="tx-text-primary">Revolutionize </span> Your Business.</p>
+        <p class="mt-2 text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl"><span class="tx-text-primary">Revolutionize </span> Your Business.</p>
         <p class="mt-6 text-lg leading-8 text-gray-600">Get the most out of TransactX by leveraging on the service that is most tailored to you.</p>
       </div>
       <div class="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-7xl mb-10">
@@ -12,13 +12,14 @@
               <div class="absolute right-5 top-10 flex h-10 w-10 items-center justify-center rounded-lg bg-gray/5">
                 <component :is="feature.icon" class="h-6 w-6 tx-text-secondary" aria-hidden="true" />
               </div>
-              <div class="absolute right-0 bottom-0 flex h-auto w-60 items-center justify-center">
+              <!-- <div class="absolute right-0 bottom-0 flex h-auto w-60 items-center justify-center">
                 <video class="hidden xl:block" :src="feature.url" autoplay="autoplay" loop="loop"></video>
-              </div>
+              </div> -->
+
               {{ feature.name }}
             </dt>
             <dd class="mt-2 text-base leading-7 tx-text-primary">{{ feature.domain }}</dd>
-            <dd class="mt-2 text-base leading-7 xl:max-w-80 text-gray-700">{{ feature.description }}</dd>
+            <dd class="mt-2 text-base leading-7  text-gray-700">{{ feature.description }}</dd>
           </div>
         </dl>
       </div>
@@ -61,5 +62,12 @@ const features = [
   },
 ]
 </script>
+
+
+<style scoped>
+#Stories{
+background-color: rgb(248, 248, 248);
+}
+</style>
 
 

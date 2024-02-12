@@ -1,5 +1,5 @@
 import { pwa } from './config/pwa'
-import { appDescription } from './constants/index'
+import { appName, appDescription } from './constants/index'
 
 export default defineNuxtConfig({
   modules: [
@@ -15,7 +15,7 @@ export default defineNuxtConfig({
     // when using generate, payload js assets included in sw precache manifest
     // but missing on offline, disabling extraction it until fixed
     payloadExtraction: false,
-    inlineSSRStyles: false,
+    // inlineSSRStyles: false,
     renderJsonPayloads: true,
     typedPages: true,
   },
@@ -49,6 +49,7 @@ export default defineNuxtConfig({
 
   app: {
     head: {
+      charset: 'utf-8',
       viewport: 'width=device-width,initial-scale=1',
       link: [
         { rel: 'icon', href: '/favicon.svg', sizes: 'any' },
@@ -57,15 +58,14 @@ export default defineNuxtConfig({
       ],
       meta: [
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+        { name: 'title', content: appName },
+        { name: 'ogTitle', content: appName },
         { name: 'description', content: appDescription },
+        { name: 'ogDescription', content: appDescription }, 
+        { name: 'ogImage', content: "/public/transactx.svg" }, 
+        { name: 'twitterCard', content: "summary_large_image" },
         { name: 'apple-mobile-web-app-status-bar-style', content: 'black-translucent' },
       ],
-      // script:[
-      //   {
-      //     src: 'https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js',
-      //     defer: true
-      //   }
-      // ]
     },
   },
 
