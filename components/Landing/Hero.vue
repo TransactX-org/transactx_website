@@ -27,11 +27,11 @@
             </p>
             <div class="mt-10 flex items-center justify-center lg:justify-start gap-x-6" >
               <NuxtLink href="#appstore">
-                <img class="pointer" src="/app-store.svg" width="150" />
+                <img class="pointer" src="/app-store.svg" width="150" alt="App store" />
               </NuxtLink> 
               
               <NuxtLink href="#playstore">
-              <img class="pointer" src="/google-play.svg" width="165"/>
+              <img class="pointer" src="/google-play.svg" width="165" alt="Google play"/>
               </NuxtLink> 
             </div>
           </div>
@@ -40,7 +40,6 @@
         <!--  -->
         <div class="w-full lg:w-1/2 flex justify-center">
           <div data-aos="zoom-in" data-aos-duration="2000">
-            <!-- <img src="/transactx-app-dashboard.png" class="w-full h-auto mt-7xl md:mt-9xl lg:mt--15" alt=""> -->
             <img src="/transactxx.png" class="w-3xl h-auto mt-7xl md:mt-9xl lg:mt--15" alt="Hero Image">
           </div>
         </div>

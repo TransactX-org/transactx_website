@@ -1,7 +1,7 @@
 <template>
   <section class="bg-white mt-20 relative isolate overflow-hidden px-6 py-20 sm:py-28 lg:px-8">
     <div class="mx-auto max-w-2xl lg:max-w-4xl" data-aos="fade-up" data-aos-duration="1000">
-      <img class="mx-auto h-12" src="/icon-black.svg" alt="" />
+      <img class="mx-auto h-12" src="/icon-black.svg" alt="Icon" />
       <figure class="mt-10">
         <blockquote class="text-center text-xl leading-8 text-gray-800 sm:text-2xl sm:leading-9">
           <p>“Working on this project is exciting and I can't wait to ship the goodness we are cooking and elevate our users”</p>

@@ -27,11 +27,11 @@
             </p>
             <div class="mt-10 flex items-center justify-center gap-x-7" data-aos="fade-up"  data-aos-delay="500" data-aos-duration="1000">
               <NuxtLink href="#appstore">
-                <img class="pointer" src="/app-store.svg" width="150" />
+                <!-- <img class="pointer" src="/app-store.svg" width="150" /> -->
               </NuxtLink> 
               
               <NuxtLink href="#playstore">
-              <img class="pointer" src="/google-play.svg" width="165"/>
+              <!-- <img class="pointer" src="/google-play.svg" width="165"/> -->
               </NuxtLink> 
             </div>
           </div>
@@ -40,7 +40,7 @@
         <!--  -->
         <div class="w-full">
           <div data-aos="zoom-in" data-aos-duration="2000">
-            <img src="/transactxx.svg" class="w-3xl h-auto mt-7xl md:mt-9xl lg:mt-0" alt="">
+            <!-- <img src="/transactxx.svg" class="w-3xl h-auto mt-7xl md:mt-9xl lg:mt-0" alt=""> -->
           </div>
         </div>
       </div>
