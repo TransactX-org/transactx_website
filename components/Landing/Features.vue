@@ -30,19 +30,19 @@ const features = [
   {
     name: 'Real-Time Account Sync',
     description:
-      'Stay on top of your finances with instant synchronization across all your bank accounts. Whether you\'re managing a business or personal finances, get real-time updates on every transaction, balance change, and financial activity. Never miss a beat with comprehensive financial oversight.',
+      'Stay on top of your finances with instant synchronization across all your bank accounts. Whether you\'re managing a business or personal finances, get live updates on every transaction, balance change, and financial activity. Never miss a beat with complete financial oversight.',
     icon: ArrowPathIcon,
   },
   {
     name: 'Bill Payment Service',
     description:
-      'Simplify your life with our all-in-one bill payment solution. From utilities and subscriptions to entertainment and digital services, pay everything from one secure platform. Save time, avoid late fees, and maintain perfect payment records effortlessly.',
+      'Simplify your life with our unified bill payment solution. From utilities and subscriptions to entertainment and digital services, pay everything from one trusted platform. Save time, avoid late fees, and maintain perfect payment records effortlessly.',
     icon: BanknotesIcon,
   },
   {
     name: 'Personal Wallet with NUBAN',
     description:
-      'Experience the future of digital banking with our Personal Wallet featuring a dedicated NUBAN. Enjoy bank-level security, instant transactions, and complete financial control. Send money, receive payments, pay bills, and manage your finances all from one powerful, secure platform.',
+      'Experience the future of digital banking with our Personal Wallet featuring a dedicated NUBAN. Enjoy enterprise-grade security, instant transactions, and total financial control. Send money, receive payments, pay bills, and manage your finances all from one powerful, reliable platform.',
     icon: WalletIcon,
   },
   {

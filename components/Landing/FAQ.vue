@@ -53,19 +53,19 @@ const openIndex = ref<number | null>(null)
 const leftColumnFAQs = [
   {
     question: "How does TransactX ensure the security of my transactions?",
-    answer: "TransactX prioritizes the security of your transactions. We employ advanced encryption techniques to safeguard your financial data and utilize secure protocols for all transactions. Additionally, our real-time network status checker helps you confirm the strength of your bank's network before conducting transactions, ensuring a seamless and secure experience."
+    answer: "TransactX prioritizes transaction security through advanced encryption techniques and robust protocols. We safeguard your financial data with bank-level security measures and provide a real-time network status checker to verify your bank's connection strength before transactions, ensuring a smooth and protected experience."
   },
   {
     question: "Can I sync multiple bank accounts with TransactX?",
-    answer: "Yes, absolutely. TransactX allows you to sync multiple bank accounts in real-time, providing you with a comprehensive overview of your financial activity across all your accounts, whether you're an individual managing personal finances or a business owner handling transactions for your enterprise."
+    answer: "Yes, absolutely. TransactX enables you to connect multiple bank accounts instantly, giving you a unified view of your financial activity across all accounts. Whether you're managing personal finances or business transactions, you'll have complete visibility into your financial landscape."
   },
   {
     question: "What services are included in the Bill Payment Service?",
-    answer: "Our Bill Payment Service covers a wide range of expenses, from essential utilities like electricity and water to entertainment options like airtime top-ups and betting accounts. With TransactX, you can conveniently manage and pay all your bills from different service providers in one place."
+    answer: "Our Bill Payment Service handles a diverse range of expenses, from essential utilities like electricity and water to entertainment options like airtime top-ups and betting accounts. With TransactX, you can conveniently manage and pay all your bills from different service providers in one centralized location."
   },
   {
     question: "Is TransactX only suitable for businesses, or can individuals also benefit from it?",
-    answer: "TransactX caters to both businesses and individuals. Whether you run a POS business, manage a micro-enterprise, or simply want to streamline your personal finances, our platform offers features tailored to meet your specific needs, including real-time account sync, bill payment services, and secure personal wallets."
+    answer: "TransactX serves both businesses and individuals equally. Whether you run a POS business, manage a micro-enterprise, or simply want to streamline your personal finances, our platform offers features tailored to meet your specific needs, including instant account sync, bill payment services, and protected personal wallets."
   }
 ]
 
@@ -76,11 +76,11 @@ const rightColumnFAQs = [
   },
   {
     question: "Can TransactX help with banking the unbanked population?",
-    answer: "Yes, TransactX is committed to banking the unbanked. Our Personal Wallet with a dedicated NUBAN provides a secure and accessible financial solution for individuals who may not have access to traditional banking services. With features like bill payments, P2P transactions, and fund withdrawals, we aim to empower everyone with convenient financial tools."
+    answer: "Yes, TransactX is committed to financial inclusion. Our Personal Wallet with a dedicated NUBAN provides an accessible financial solution for individuals who may not have access to traditional banking services. With features like bill payments, P2P transactions, and fund withdrawals, we aim to empower everyone with convenient financial tools."
   },
   {
     question: "How does the Network Strength Tracker prevent failed transactions?",
-    answer: "The Network Strength Tracker is a cutting-edge feature of TransactX that allows you to check the strength of your bank's network in real-time before initiating transactions. By ensuring a stable network connection, it helps prevent failed transactions and minimizes disruptions to your financial activities, providing a hassle-free banking experience."
+    answer: "The Network Strength Tracker is an innovative feature that allows you to check your bank's network stability before initiating transactions. By ensuring a stable connection, it helps prevent failed transactions and minimizes disruptions to your financial activities, providing a smooth banking experience."
   },
   {
     question: "Is TransactX suitable for millennials and side hustlers?",

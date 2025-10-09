@@ -35,7 +35,7 @@ const features = [
     name: 'Point on Sale (POS) Businesses',
     domain: 'SME\'s, Micro-enterprises',
     description:
-      'Streamline your POS operations with comprehensive transaction tracking and real-time financial insights. Monitor sales, track expenses, and manage cash flow across all your business accounts from one powerful dashboard. Perfect for small businesses and micro-enterprises.',
+      'Streamline your POS operations with detailed transaction tracking and live financial insights. Monitor sales, track expenses, and manage cash flow across all your business accounts from one powerful dashboard. Perfect for small businesses and micro-enterprises.',
     icon: BriefcaseIcon,
     url: 'pos-businesses.mp4'
   },
@@ -50,14 +50,14 @@ const features = [
     name: 'Banking the Unbanked',
     domain: 'Underserved communities, Rural areas',
     description:
-      'TransactX bridges the financial gap by providing accessible banking solutions to underserved communities. Our Personal Wallet with dedicated NUBAN brings traditional banking services to those who need it most, enabling secure transactions, bill payments, and financial inclusion for everyone.',
+      'TransactX bridges the financial gap by providing accessible banking solutions to underserved communities. Our Personal Wallet with dedicated NUBAN brings traditional banking services to those who need it most, enabling protected transactions, bill payments, and financial inclusion for everyone.',
     icon: WalletIcon,
   },
   {
     name: 'Side Hustle Support',
     domain: 'Millennials, Freelancers, Entrepreneurs',
     description:
-      'Perfect for modern entrepreneurs and side hustlers who need flexible financial tools. Manage multiple income streams, receive payments instantly, and track your earnings with our comprehensive wallet system. Built for the gig economy and digital nomads.',
+      'Perfect for modern entrepreneurs and side hustlers who need flexible financial tools. Manage multiple income streams, receive payments instantly, and track your earnings with our complete wallet system. Built for the gig economy and digital nomads.',
     icon: UserPlusIcon,
   },
 ]

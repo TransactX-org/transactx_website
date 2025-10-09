@@ -27,9 +27,9 @@
               />
             </h1>
             <p class="mt-6 leading-8 text-gray-600 px-5 lg:px-0"  data-aos="fade-up" data-aos-delay="250" data-aos-duration="1000">
-              Monitor your bank account transactions in real-time, pay bills seamlessly, 
-              and manage your personal wallet with ease. Join TransactX and revolutionize 
-              the way you handle your finances with our comprehensive financial platform.
+              Track your bank account transactions instantly, pay bills seamlessly, 
+              and manage your personal wallet with ease. Join TransactX and transform 
+              the way you handle your finances with our all-in-one financial platform.
             </p>
             <div class="mt-10 flex items-center justify-center lg:justify-start gap-x-6" >
               <NuxtLink href="#appstore">

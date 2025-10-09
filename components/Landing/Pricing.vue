@@ -19,7 +19,7 @@
           >
             <h3 class="my-4 text-2xl font-semibold">Hydrogen</h3>
             <p class="font-light text-gray-600 text-base">
-              Perfect for individuals and small service providers
+              Essential features for individuals and small service providers
             </p>
             <div class="flex justify-center items-baseline my-8">
               <span class="mr-2 text-5xl font-bold">₦10k</span>
@@ -115,7 +115,7 @@
           >
             <h3 class="my-4 text-2xl font-semibold">Helium</h3>
             <p class="font-light text-gray-600 text-base">
-              Ideal for growing businesses with advanced needs
+              Advanced features for growing businesses with expanding needs
             </p>
             <div class="flex justify-center items-baseline my-8">
               <span class="mr-2 text-5xl font-bold">₦25k</span>
@@ -211,7 +211,7 @@
           >
             <h3 class="my-4 text-2xl font-semibold">Lithium</h3>
             <p class="font-light text-gray-600 text-base">
-              Perfect for enterprises and high-volume operations
+              Enterprise-grade features for large-scale operations
             </p>
             <div class="flex justify-center items-baseline my-8">
               <span class="mr-2 text-5xl font-bold">₦100k</span>
