@@ -30,25 +30,25 @@ const features = [
   {
     name: 'Real-Time Account Sync',
     description:
-      'Do you run a POS business or tired of manually tracking your transactions across multiple platforms? With TransactX, you can sync all your accounts in real-time, giving you a comprehensive view of your financial health at your fingertips. - Our platform provides an up-to-the-minute snapshot of your financial activity.',
+      'Stay on top of your finances with instant synchronization across all your bank accounts. Whether you\'re managing a business or personal finances, get real-time updates on every transaction, balance change, and financial activity. Never miss a beat with comprehensive financial oversight.',
     icon: ArrowPathIcon,
   },
   {
     name: 'Bill Payment Service',
     description:
-      'Tired of juggling various bills from different service providers? TransactX has got you covered with our comprehensive Bill Payment Service. We understand that life\'s expenses come in all shapes and sizes, from essential utilities like electricity and water to entertainment options like airtime top-ups and betting accounts.',
+      'Simplify your life with our all-in-one bill payment solution. From utilities and subscriptions to entertainment and digital services, pay everything from one secure platform. Save time, avoid late fees, and maintain perfect payment records effortlessly.',
     icon: BanknotesIcon,
   },
   {
     name: 'Personal Wallet with NUBAN',
     description:
-      'TransactX Personal Wallet with a dedicated NUBAN offers you security, speed, and flexibility. Your funds are protected, and transactions are encrypted for your peace of mind. Plus, with the ability to receive payments, it\'s not just a wallet; it\'s a everything. With your wallet, you can pay bills, do P2P transactions, receive payments for services or withdraw to your bank account.',
+      'Experience the future of digital banking with our Personal Wallet featuring a dedicated NUBAN. Enjoy bank-level security, instant transactions, and complete financial control. Send money, receive payments, pay bills, and manage your finances all from one powerful, secure platform.',
     icon: WalletIcon,
   },
   {
     name: 'Real-Time Network Status Checker',
     description:
-      'We understand that the frustration of failed transactions can disrupt your financial activities and cause unnecessary stress. That\'s why TransactX is proud to introduce the Network Strength Tracker, a cutting-edge feature that empowers you to confirm the strength of your bank\'s network before carrying out transactions. Say goodbye to failed transactions and hello to hassle-free banking',
+      'Eliminate transaction failures with our intelligent Network Strength Tracker. Check your bank\'s network stability before initiating transactions and ensure successful payments every time. No more wasted time on failed transactions or unexpected delays.',
     icon: ArrowPathIcon,
   },
 ]

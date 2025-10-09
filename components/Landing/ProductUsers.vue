@@ -35,7 +35,7 @@ const features = [
     name: 'Point on Sale (POS) Businesses',
     domain: 'SME\'s, Micro-enterprises',
     description:
-      'Do you run a POS business or tired of manually tracking your transactions across multiple platforms? With TransactX, you can sync all your accounts in real-time, giving you a comprehensive view of your financial health at your fingertips. - Our platform provides an up-to-the-minute snapshot of your financial activity.',
+      'Streamline your POS operations with comprehensive transaction tracking and real-time financial insights. Monitor sales, track expenses, and manage cash flow across all your business accounts from one powerful dashboard. Perfect for small businesses and micro-enterprises.',
     icon: BriefcaseIcon,
     url: 'pos-businesses.mp4'
   },
@@ -43,21 +43,21 @@ const features = [
     name: 'Individuals',
     domain: 'Service providers, Professionals',
     description:
-      'Tired of juggling various bills from different service providers? TransactX has got you covered with our comprehensive Bill Payment Service. We understand that life\'s expenses come in all shapes and sizes, from essential utilities like electricity and water to entertainment options like airtime top-ups and betting accounts.',
+      'Take control of your personal finances with our intuitive bill payment and account management tools. From everyday expenses to monthly subscriptions, manage all your financial obligations efficiently and never miss a payment deadline again.',
     icon: BanknotesIcon,
   },
   {
     name: 'Banking the Unbanked',
-    domain: 'Service providers, Professionals',
+    domain: 'Underserved communities, Rural areas',
     description:
-      'TransactX Personal Wallet with a dedicated NUBAN offers you security, speed, and flexibility. Your funds are protected, and transactions are encrypted for your peace of mind. Plus, with the ability to receive payments, it\'s not just a wallet; it\'s a everything. With your wallet, you can pay bills, do P2P transactions, receive payments for services or withdraw to your bank account.',
+      'TransactX bridges the financial gap by providing accessible banking solutions to underserved communities. Our Personal Wallet with dedicated NUBAN brings traditional banking services to those who need it most, enabling secure transactions, bill payments, and financial inclusion for everyone.',
     icon: WalletIcon,
   },
   {
-    name: '+1 Side Hustle',
-    domain: 'Millenials, Mini agents',
+    name: 'Side Hustle Support',
+    domain: 'Millennials, Freelancers, Entrepreneurs',
     description:
-      'TransactX Personal Wallet with a dedicated NUBAN offers you security, speed, and flexibility. Your funds are protected, and transactions are encrypted for your peace of mind. Plus, with the ability to receive payments, it\'s not just a wallet; it\'s a everything. With your wallet, you can pay bills, do P2P transactions, receive payments for services or withdraw to your bank account.',
+      'Perfect for modern entrepreneurs and side hustlers who need flexible financial tools. Manage multiple income streams, receive payments instantly, and track your earnings with our comprehensive wallet system. Built for the gig economy and digital nomads.',
     icon: UserPlusIcon,
   },
 ]

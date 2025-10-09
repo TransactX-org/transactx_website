@@ -4,7 +4,7 @@
       <img class="mx-auto h-12" src="/icon-black.svg" alt="Icon" />
       <figure class="mt-10">
         <blockquote class="text-center text-xl leading-8 text-gray-800 sm:text-2xl sm:leading-9">
-          <p>“Working on this project is exciting and I can't wait to ship the goodness we are cooking and elevate our users”</p>
+          <p>"We're building something truly special at TransactX. Our mission is to democratize financial services and empower every user with the tools they need to succeed. The future of banking is here, and we're excited to share it with you."</p>
         </blockquote>
         <figcaption class="mt-10">
           <div class="mt-4 flex items-center justify-center space-x-3 text-base">
@@ -19,3 +19,7 @@
     </div>
   </section>
 </template>
+
+<script setup>
+// CEO Message component
+</script>

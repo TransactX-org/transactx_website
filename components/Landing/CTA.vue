@@ -12,8 +12,8 @@
           </defs>
         </svg>
         <div class="mx-auto max-w-xl text-center lg:mx-0 lg:flex-auto lg:py-32 lg:text-left" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
-          <h2 class="text-2xl font-bold tracking-tight text-white sm:text-3xl">Are you broke AF? <br/> Hit Up Your BFF for a Boost!</h2>
-          <p class="mt-6 text-lg leading-8 text-gray-200">Running low on cash? Don't stress, fam! With TransactX, you can easily shoot a request to your ride-or-die and get back in the game. It's all about that #FriendshipGoals vibe. 💸🤝 #TransactX #BFFBoost </p>
+          <h2 class="text-2xl font-bold tracking-tight text-white sm:text-3xl">Need Financial Support? <br/> Request Money from Friends & Family!</h2>
+          <p class="mt-6 text-lg leading-8 text-gray-200">Running low on funds? No worries! With TransactX, you can easily request money from your trusted contacts and get back on track. It's all about building stronger financial relationships and supporting each other. 💸🤝</p>
           <div class="mt-10 flex items-center justify-center gap-x-6 lg:justify-start">
             <NuxtLink
                 href="#"

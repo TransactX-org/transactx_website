@@ -9,7 +9,7 @@
             Designed for everyone<span class="tx-text-primary"> | Businesses, Individuals</span>
           </h2>
           <p class="mb-5 font-light text-gray-600 text-base">
-            Discover our straightforward and competitive pricing options for our services. We believe in transparency and making your financial journey hassle-free.
+            Choose the perfect plan for your financial needs. Transparent pricing with no hidden fees - just straightforward value for every user type.
           </p>
         </div>
         <div class="space-y-8 lg:grid lg:grid-cols-3 sm:gap-6 xl:gap-10 lg:space-y-0">
@@ -19,7 +19,7 @@
           >
             <h3 class="my-4 text-2xl font-semibold">Hydrogen</h3>
             <p class="font-light text-gray-600 text-base">
-              Best option for personal use and service providers
+              Perfect for individuals and small service providers
             </p>
             <div class="flex justify-center items-baseline my-8">
               <span class="mr-2 text-5xl font-bold">₦10k</span>
@@ -115,7 +115,7 @@
           >
             <h3 class="my-4 text-2xl font-semibold">Helium</h3>
             <p class="font-light text-gray-600 text-base">
-              Relevant for bigger SMEs, extended and premium support.
+              Ideal for growing businesses with advanced needs
             </p>
             <div class="flex justify-center items-baseline my-8">
               <span class="mr-2 text-5xl font-bold">₦25k</span>
@@ -211,7 +211,7 @@
           >
             <h3 class="my-4 text-2xl font-semibold">Lithium</h3>
             <p class="font-light text-gray-600 text-base">
-              Best option for large scale uses and premium support
+              Perfect for enterprises and high-volume operations
             </p>
             <div class="flex justify-center items-baseline my-8">
               <span class="mr-2 text-5xl font-bold">₦100k</span>
@@ -306,3 +306,7 @@
     </section>
   </div>
 </template>
+
+<script setup>
+// Pricing component
+</script>
