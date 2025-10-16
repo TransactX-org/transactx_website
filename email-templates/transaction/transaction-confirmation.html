@@ -25,19 +25,20 @@
         }
         
         .header {
-            background: linear-gradient(135deg, #AB0B4B 0%, #E91E63 100%);
-            padding: 30px 20px;
+            background: #ffffff;
+            padding: 40px 20px 30px 20px;
             text-align: center;
+            border-bottom: 1px solid #e5e7eb;
         }
         
         .logo {
-            width: 120px;
+            width: 140px;
             height: auto;
-            margin-bottom: 10px;
+            margin-bottom: 15px;
         }
         
         .header-text {
-            color: #ffffff;
+            color: #AB0B4B;
             font-size: 18px;
             font-weight: 600;
             margin: 0;
@@ -63,7 +64,7 @@
         
         .status-badge {
             display: inline-block;
-            background-color: #10b981;
+            background-color: #AB0B4B;
             color: #ffffff;
             padding: 8px 16px;
             border-radius: 20px;
@@ -247,7 +248,7 @@
         <div class="content">
             <div class="greeting">Dear {{customer_name}},</div>
             
-            <div class="status-badge">✓ Transaction Successful</div>
+            <div class="status-badge">Transaction Successful</div>
             
             <div class="message">
                 Your {{transaction_type}} of <strong class="amount">{{amount}}</strong> has been successfully processed. 
