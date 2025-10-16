@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{newsletter_title}} - TransactX Newsletter</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #374151;
+            background-color: #f9fafb;
+        }
+        
+        .email-container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #ffffff;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #AB0B4B 0%, #E91E63 100%);
+            padding: 30px 20px;
+            text-align: center;
+        }
+        
+        .logo {
+            width: 120px;
+            height: auto;
+            margin-bottom: 10px;
+        }
+        
+        .header-text {
+            color: #ffffff;
+            font-size: 18px;
+            font-weight: 600;
+            margin: 0;
+        }
+        
+        .content {
+            padding: 40px 30px;
+        }
+        
+        .newsletter-title {
+            font-size: 24px;
+            font-weight: 700;
+            color: #111827;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        
+        .newsletter-date {
+            font-size: 14px;
+            color: #6b7280;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        .greeting {
+            font-size: 18px;
+            font-weight: 600;
+            color: #111827;
+            margin-bottom: 20px;
+        }
+        
+        .intro-message {
+            font-size: 16px;
+            color: #374151;
+            margin-bottom: 30px;
+            line-height: 1.7;
+        }
+        
+        .featured-article {
+            background-color: #f8fafc;
+            border: 1px solid #e5e7eb;
+            border-radius: 8px;
+            padding: 25px;
+            margin: 25px 0;
+        }
+        
+        .article-title {
+            font-size: 20px;
+            font-weight: 700;
+            color: #111827;
+            margin-bottom: 10px;
+        }
+        
+        .article-excerpt {
+            font-size: 14px;
+            color: #6b7280;
+            margin-bottom: 15px;
+            line-height: 1.6;
+        }
+        
+        .article-link {
+            color: #AB0B4B;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 14px;
+        }
+        
+        .article-link:hover {
+            text-decoration: underline;
+        }
+        
+        .tips-section {
+            background-color: #f0f9ff;
+            border: 1px solid #0ea5e9;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 25px 0;
+        }
+        
+        .tips-title {
+            font-size: 18px;
+            font-weight: 600;
+            color: #0c4a6e;
+            margin-bottom: 15px;
+        }
+        
+        .tip-item {
+            margin-bottom: 15px;
+            padding-left: 20px;
+            position: relative;
+        }
+        
+        .tip-item:before {
+            content: "💡";
+            position: absolute;
+            left: 0;
+            color: #0ea5e9;
+        }
+        
+        .tip-title {
+            font-size: 14px;
+            font-weight: 600;
+            color: #0c4a6e;
+            margin-bottom: 5px;
+        }
+        
+        .tip-description {
+            font-size: 14px;
+            color: #0c4a6e;
+        }
+        
+        .market-update {
+            background-color: #fef3c7;
+            border: 1px solid #f59e0b;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 25px 0;
+        }
+        
+        .market-title {
+            font-size: 18px;
+            font-weight: 600;
+            color: #92400e;
+            margin-bottom: 15px;
+        }
+        
+        .market-text {
+            font-size: 14px;
+            color: #92400e;
+            margin-bottom: 10px;
+        }
+        
+        .market-stats {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin-top: 15px;
+        }
+        
+        .stat-item {
+            text-align: center;
+            padding: 10px;
+            background-color: #ffffff;
+            border-radius: 6px;
+        }
+        
+        .stat-value {
+            font-size: 18px;
+            font-weight: 700;
+            color: #111827;
+        }
+        
+        .stat-label {
+            font-size: 12px;
+            color: #6b7280;
+        }
+        
+        .cta-section {
+            text-align: center;
+            margin: 30px 0;
+        }
+        
+        .button {
+            display: inline-block;
+            background: linear-gradient(135deg, #AB0B4B 0%, #E91E63 100%);
+            color: #ffffff;
+            text-decoration: none;
+            padding: 16px 32px;
+            border-radius: 6px;
+            font-weight: 600;
+            font-size: 16px;
+            margin: 10px;
+        }
+        
+        .button:hover {
+            background: linear-gradient(135deg, #8A0A3D 0%, #C2185B 100%);
+        }
+        
+        .button-secondary {
+            background: #ffffff;
+            color: #AB0B4B;
+            border: 2px solid #AB0B4B;
+        }
+        
+        .button-secondary:hover {
+            background: #AB0B4B;
+            color: #ffffff;
+        }
+        
+        .footer {
+            background-color: #f8fafc;
+            padding: 30px;
+            text-align: center;
+            border-top: 1px solid #e5e7eb;
+        }
+        
+        .footer-text {
+            font-size: 14px;
+            color: #6b7280;
+            margin-bottom: 15px;
+        }
+        
+        .footer-links {
+            margin: 15px 0;
+        }
+        
+        .footer-links a {
+            color: #AB0B4B;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 14px;
+        }
+        
+        .footer-links a:hover {
+            text-decoration: underline;
+        }
+        
+        .social-links {
+            margin: 20px 0;
+        }
+        
+        .social-links a {
+            display: inline-block;
+            margin: 0 8px;
+            color: #6b7280;
+            text-decoration: none;
+        }
+        
+        .unsubscribe {
+            font-size: 12px;
+            color: #9ca3af;
+            margin-top: 20px;
+        }
+        
+        .unsubscribe a {
+            color: #6b7280;
+            text-decoration: none;
+        }
+        
+        .copyright {
+            font-size: 12px;
+            color: #9ca3af;
+            margin-top: 10px;
+        }
+        
+        @media only screen and (max-width: 600px) {
+            .email-container {
+                width: 100% !important;
+            }
+            
+            .content {
+                padding: 20px 15px;
+            }
+            
+            .header {
+                padding: 20px 15px;
+            }
+            
+            .footer {
+                padding: 20px 15px;
+            }
+            
+            .market-stats {
+                grid-template-columns: 1fr;
+                gap: 10px;
+            }
+            
+            .newsletter-title {
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="email-container">
+        <!-- Header -->
+        <div class="header">
+            <img src="https://www.mytransactx.com/transactx.svg" alt="TransactX" class="logo">
+            <p class="header-text">Weekly Financial Insights</p>
+        </div>
+        
+        <!-- Content -->
+        <div class="content">
+            <div class="newsletter-title">{{newsletter_title}}</div>
+            <div class="newsletter-date">{{newsletter_date}}</div>
+            
+            <div class="greeting">Dear {{customer_name}},</div>
+            
+            <div class="intro-message">
+                Welcome to your weekly TransactX newsletter! This week, we're bringing you the latest financial insights, 
+                money management tips, and updates on our platform features.
+            </div>
+            
+            <div class="featured-article">
+                <div class="article-title">{{featured_article_title}}</div>
+                <div class="article-excerpt">{{featured_article_excerpt}}</div>
+                <a href="{{featured_article_link}}" class="article-link">Read Full Article →</a>
+            </div>
+            
+            <div class="tips-section">
+                <div class="tips-title">💡 This Week's Money Tips</div>
+                <div class="tip-item">
+                    <div class="tip-title">Track Your Spending</div>
+                    <div class="tip-description">Use TransactX's analytics to identify where your money goes and find opportunities to save.</div>
+                </div>
+                <div class="tip-item">
+                    <div class="tip-title">Set Up Auto-Pay</div>
+                    <div class="tip-description">Never miss a bill payment again with our automated payment scheduling feature.</div>
+                </div>
+                <div class="tip-item">
+                    <div class="tip-title">Build an Emergency Fund</div>
+                    <div class="tip-description">Aim to save 3-6 months of expenses in your TransactX wallet for financial security.</div>
+                </div>
+            </div>
+            
+            <div class="market-update">
+                <div class="market-title">📊 Market Update</div>
+                <div class="market-text">
+                    Stay informed about the latest financial trends and market movements that could affect your investments and savings.
+                </div>
+                <div class="market-stats">
+                    <div class="stat-item">
+                        <div class="stat-value">{{naira_rate}}</div>
+                        <div class="stat-label">USD/NGN Rate</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value">{{inflation_rate}}</div>
+                        <div class="stat-label">Inflation Rate</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="cta-section">
+                <a href="https://www.mytransactx.com/dashboard" class="button">Access Your Dashboard</a>
+                <a href="https://www.mytransactx.com/features" class="button button-secondary">Explore Features</a>
+            </div>
+        </div>
+        
+        <!-- Footer -->
+        <div class="footer">
+            <p class="footer-text">
+                Thank you for being part of the TransactX community. We're committed to helping you achieve your financial goals.
+            </p>
+            
+            <div class="footer-links">
+                <a href="https://www.mytransactx.com">Website</a>
+                <a href="https://www.mytransactx.com/privacy-policy">Privacy Policy</a>
+                <a href="https://www.mytransactx.com/terms">Terms of Service</a>
+                <a href="mailto:support@mytransactx.com">Support</a>
+            </div>
+            
+            <div class="social-links">
+                <a href="https://x.com/mytransactx">X (Twitter)</a>
+                <a href="https://www.instagram.com/mytransactx/">Instagram</a>
+            </div>
+            
+            <div class="unsubscribe">
+                <a href="{{unsubscribe_link}}">Unsubscribe</a> | 
+                <a href="{{preferences_link}}">Update Preferences</a>
+            </div>
+            
+            <div class="copyright">
+                © 2025 TransactX™. All Rights Reserved.<br>
+                TransactX is a financial technology company registered in Nigeria.
+            </div>
+        </div>
+    </div>
+</body>
+</html>

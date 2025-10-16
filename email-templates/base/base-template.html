@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{subject}}</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #374151;
+            background-color: #f9fafb;
+        }
+        
+        .email-container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #ffffff;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #AB0B4B 0%, #E91E63 100%);
+            padding: 30px 20px;
+            text-align: center;
+        }
+        
+        .logo {
+            width: 120px;
+            height: auto;
+            margin-bottom: 10px;
+        }
+        
+        .header-text {
+            color: #ffffff;
+            font-size: 18px;
+            font-weight: 600;
+            margin: 0;
+        }
+        
+        .content {
+            padding: 40px 30px;
+        }
+        
+        .greeting {
+            font-size: 18px;
+            font-weight: 600;
+            color: #111827;
+            margin-bottom: 20px;
+        }
+        
+        .message {
+            font-size: 16px;
+            color: #374151;
+            margin-bottom: 30px;
+            line-height: 1.7;
+        }
+        
+        .transaction-details {
+            background-color: #f8fafc;
+            border: 1px solid #e5e7eb;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        
+        .detail-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 8px 0;
+            border-bottom: 1px solid #e5e7eb;
+        }
+        
+        .detail-row:last-child {
+            border-bottom: none;
+        }
+        
+        .detail-label {
+            font-weight: 600;
+            color: #374151;
+        }
+        
+        .detail-value {
+            color: #111827;
+            font-weight: 500;
+        }
+        
+        .amount {
+            color: #AB0B4B;
+            font-weight: 700;
+            font-size: 18px;
+        }
+        
+        .button {
+            display: inline-block;
+            background: linear-gradient(135deg, #AB0B4B 0%, #E91E63 100%);
+            color: #ffffff;
+            text-decoration: none;
+            padding: 12px 24px;
+            border-radius: 6px;
+            font-weight: 600;
+            font-size: 16px;
+            margin: 20px 0;
+            text-align: center;
+        }
+        
+        .button:hover {
+            background: linear-gradient(135deg, #8A0A3D 0%, #C2185B 100%);
+        }
+        
+        .security-note {
+            background-color: #fef3c7;
+            border: 1px solid #f59e0b;
+            border-radius: 6px;
+            padding: 15px;
+            margin: 20px 0;
+            font-size: 14px;
+            color: #92400e;
+        }
+        
+        .footer {
+            background-color: #f8fafc;
+            padding: 30px;
+            text-align: center;
+            border-top: 1px solid #e5e7eb;
+        }
+        
+        .footer-text {
+            font-size: 14px;
+            color: #6b7280;
+            margin-bottom: 15px;
+        }
+        
+        .footer-links {
+            margin: 15px 0;
+        }
+        
+        .footer-links a {
+            color: #AB0B4B;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 14px;
+        }
+        
+        .footer-links a:hover {
+            text-decoration: underline;
+        }
+        
+        .social-links {
+            margin: 20px 0;
+        }
+        
+        .social-links a {
+            display: inline-block;
+            margin: 0 8px;
+            color: #6b7280;
+            text-decoration: none;
+        }
+        
+        .copyright {
+            font-size: 12px;
+            color: #9ca3af;
+            margin-top: 20px;
+        }
+        
+        .divider {
+            height: 1px;
+            background-color: #e5e7eb;
+            margin: 20px 0;
+        }
+        
+        @media only screen and (max-width: 600px) {
+            .email-container {
+                width: 100% !important;
+            }
+            
+            .content {
+                padding: 20px 15px;
+            }
+            
+            .header {
+                padding: 20px 15px;
+            }
+            
+            .footer {
+                padding: 20px 15px;
+            }
+            
+            .detail-row {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="email-container">
+        <!-- Header -->
+        <div class="header">
+            <img src="{{logo_url}}" alt="TransactX" class="logo">
+            <p class="header-text">TransactX - Monitor Your Finances</p>
+        </div>
+        
+        <!-- Content -->
+        <div class="content">
+            {{content}}
+        </div>
+        
+        <!-- Footer -->
+        <div class="footer">
+            <p class="footer-text">
+                This email was sent by TransactX. If you have any questions, please contact our support team.
+            </p>
+            
+            <div class="footer-links">
+                <a href="https://www.mytransactx.com">Website</a>
+                <a href="https://www.mytransactx.com/privacy-policy">Privacy Policy</a>
+                <a href="https://www.mytransactx.com/terms">Terms of Service</a>
+                <a href="mailto:support@mytransactx.com">Support</a>
+            </div>
+            
+            <div class="social-links">
+                <a href="https://x.com/mytransactx">X (Twitter)</a>
+                <a href="https://www.instagram.com/mytransactx/">Instagram</a>
+            </div>
+            
+            <div class="copyright">
+                © {{current_year}} TransactX™. All Rights Reserved.<br>
+                TransactX is a financial technology company registered in Nigeria.
+            </div>
+        </div>
+    </div>
+</body>
+</html>
