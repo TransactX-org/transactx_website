@@ -3,7 +3,7 @@
     <div class="mx-auto max-w-7xl px-6 lg:px-8">
       <div class="mx-auto max-w-3xl lg:text-center" data-aos="fade-up" data-aos-duration="1000">
         <h2 class="text-base font-semibold leading-7 tx-text-primary">Our Features</h2>
-        <p class="mt-2 text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl">Everything you need to deploy your app</p>
+        <p class="mt-2 text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl">Everything you need to streamline your finances</p>
         <p class="mt-6 text-lg leading-8 text-gray-600">Whether you're looking to streamline your finances, stay on top of bills, or securely manage your personal funds, we got you covered.</p>
       </div>
       <div class="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-6xl">
