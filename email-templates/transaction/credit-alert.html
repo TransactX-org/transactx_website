@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Credit Alert - TransactX</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #374151;
+            background-color: #f9fafb;
+        }
+        
+        .email-container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #ffffff;
+        }
+        
+        .header {
+            background: #ffffff;
+            padding: 40px 20px 30px 20px;
+            text-align: center;
+            border-bottom: 1px solid #e5e7eb;
+        }
+        
+        .logo {
+            width: 140px;
+            height: auto;
+            margin-bottom: 15px;
+        }
+        
+        .header-text {
+            color: #AB0B4B;
+            font-size: 18px;
+            font-weight: 600;
+            margin: 0;
+        }
+        
+        .content {
+            padding: 40px 30px;
+        }
+        
+        .greeting {
+            font-size: 18px;
+            font-weight: 600;
+            color: #111827;
+            margin-bottom: 20px;
+        }
+        
+        .message {
+            font-size: 16px;
+            color: #374151;
+            margin-bottom: 30px;
+            line-height: 1.7;
+        }
+        
+        .credit-details {
+            background-color: #f8fafc;
+            border: 1px solid #e5e7eb;
+            border-radius: 8px;
+            padding: 25px;
+            margin: 25px 0;
+        }
+        
+        .detail-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px 0;
+            border-bottom: 1px solid #e5e7eb;
+        }
+        
+        .detail-row:last-child {
+            border-bottom: none;
+        }
+        
+        .detail-label {
+            font-weight: 600;
+            color: #374151;
+            font-size: 14px;
+        }
+        
+        .detail-value {
+            color: #111827;
+            font-weight: 500;
+            font-size: 14px;
+        }
+        
+        .amount {
+            color: #AB0B4B;
+            font-weight: 700;
+            font-size: 20px;
+        }
+        
+        .credit-badge {
+            display: inline-block;
+            background-color: #AB0B4B;
+            color: #ffffff;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+        
+        .footer {
+            background-color: #f8fafc;
+            padding: 30px;
+            text-align: center;
+            border-top: 1px solid #e5e7eb;
+        }
+        
+        .footer-text {
+            font-size: 14px;
+            color: #6b7280;
+            margin-bottom: 15px;
+        }
+        
+        .footer-links {
+            margin: 15px 0;
+        }
+        
+        .footer-links a {
+            color: #AB0B4B;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 14px;
+        }
+        
+        .footer-links a:hover {
+            text-decoration: underline;
+        }
+        
+        .social-links {
+            margin: 20px 0;
+        }
+        
+        .social-links a {
+            display: inline-block;
+            margin: 0 8px;
+            color: #6b7280;
+            text-decoration: none;
+        }
+        
+        .copyright {
+            font-size: 12px;
+            color: #9ca3af;
+            margin-top: 20px;
+        }
+        
+        @media only screen and (max-width: 600px) {
+            .email-container {
+                width: 100% !important;
+            }
+            
+            .content {
+                padding: 20px 15px;
+            }
+            
+            .header {
+                padding: 20px 15px;
+            }
+            
+            .footer {
+                padding: 20px 15px;
+            }
+            
+            .detail-row {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="email-container">
+        <!-- Header -->
+        <div class="header">
+            <img src="https://www.mytransactx.com/transactx.svg" alt="TransactX" class="logo">
+            <p class="header-text">Credit Alert</p>
+        </div>
+        
+        <!-- Content -->
+        <div class="content">
+            <div class="greeting">Dear {{customer_name}},</div>
+            
+            <div class="credit-badge">Credit Received</div>
+            
+            <div class="message">
+                You have been credited an amount of <strong class="amount">{{amount}}</strong> by {{sender_name}}.
+            </div>
+            
+            <div class="credit-details">
+                <div class="detail-row">
+                    <span class="detail-label">Amount Credited</span>
+                    <span class="detail-value amount">{{amount}}</span>
+                </div>
+                <div class="detail-row">
+                    <span class="detail-label">From</span>
+                    <span class="detail-value">{{sender_name}}</span>
+                </div>
+                <div class="detail-row">
+                    <span class="detail-label">Date & Time</span>
+                    <span class="detail-value">{{transaction_date}}</span>
+                </div>
+                <div class="detail-row">
+                    <span class="detail-label">Transaction ID</span>
+                    <span class="detail-value">{{transaction_id}}</span>
+                </div>
+                <div class="detail-row">
+                    <span class="detail-label">Available Balance</span>
+                    <span class="detail-value amount">{{available_balance}}</span>
+                </div>
+            </div>
+            
+            <div class="message">
+                Thank you for choosing TransactX!
+            </div>
+        </div>
+        
+        <!-- Footer -->
+        <div class="footer">
+            <p class="footer-text">
+                This email was sent by TransactX. If you have any questions, please contact our support team.
+            </p>
+            
+            <div class="footer-links">
+                <a href="https://www.mytransactx.com">Website</a>
+                <a href="https://www.mytransactx.com/privacy-policy">Privacy Policy</a>
+                <a href="https://www.mytransactx.com/terms">Terms of Service</a>
+                <a href="mailto:support@mytransactx.com">Support</a>
+            </div>
+            
+            <div class="social-links">
+                <a href="https://x.com/mytransactx">X (Twitter)</a>
+                <a href="https://www.instagram.com/mytransactx/">Instagram</a>
+            </div>
+            
+            <div class="copyright">
+                © 2025 TransactX™. All Rights Reserved.<br>
+                TransactX is a financial technology company registered in Nigeria.
+            </div>
+        </div>
+    </div>
+</body>
+</html>
