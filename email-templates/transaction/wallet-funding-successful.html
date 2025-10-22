@@ -32,14 +32,14 @@
         }
         
         .logo {
-            width: 140px;
+            width: 170px;
             height: auto;
             margin-bottom: 15px;
         }
         
         .header-text {
             color: #AB0B4B;
-            font-size: 18px;
+            font-size: 14px;
             font-weight: 600;
             margin: 0;
         }
@@ -193,13 +193,17 @@
         <div class="content">
             <div class="greeting">Dear {{customer_name}},</div>
             
-            <div class="success-badge">Funding Successful</div>
+            <!-- <div class="success-badge">Funding Successful</div> -->
             
             <div class="message">
                 Funding of <strong class="amount">{{amount}}</strong> successful.
             </div>
             
             <div class="funding-details">
+                <div class="detail-row">
+                    <span class="detail-label">Status</span>
+                    <span class="detail-value amount">{{status}}</span>
+                </div>
                 <div class="detail-row">
                     <span class="detail-label">Amount Funded</span>
                     <span class="detail-value amount">{{amount}}</span>
