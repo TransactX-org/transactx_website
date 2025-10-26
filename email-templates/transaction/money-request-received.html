@@ -60,6 +60,17 @@
             color: #374151;
             margin-bottom: 30px;
             line-height: 1.7;
+            display: flex;
+            justify-content: center;
+        }
+        
+        .message1 {
+            font-size: 16px;
+            color: #374151;
+            margin-bottom: 30px;
+            line-height: 1.7;
+            display: flex;
+            justify-content: center;
         }
         
         .request-details {
@@ -185,6 +196,12 @@
             margin: 20px 0;
         }
         
+        .highlight {
+            color: #AB0B4B;
+            font-weight: 600;
+            text-align: center;
+        }
+        
         .social-links a {
             display: inline-block;
             margin: 0 8px;
@@ -239,7 +256,6 @@
         <div class="content">
             <div class="greeting">Dear {{customer_name}},</div>
             
-            <div class="request-badge">Money Request Received</div>
             
             <div class="message">
                 Money request from {{sender_name}}:
@@ -262,6 +278,10 @@
                     <span class="detail-label">Request ID</span>
                     <span class="detail-value">{{request_id}}</span>
                 </div>
+                <div class="detail-row">
+                    <span class="detail-label">Status</span>
+                    <span class="detail-value amount">{{request_status}}</span>
+                </div>
             </div>
             
             {{#if message}}
@@ -272,11 +292,10 @@
             
             <div class="cta-section">
                 <a href="https://www.mytransactx.com/requests" class="button">View Request</a>
-                <a href="https://www.mytransactx.com/dashboard" class="button button-secondary">Dashboard</a>
             </div>
             
-            <div class="message">
-                Thank you for choosing TransactX!
+            <div class="message1">
+                Thank you for choosing <span class="highlight">TransactX</span>!
             </div>
         </div>
         

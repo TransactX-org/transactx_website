@@ -247,9 +247,7 @@
         <!-- Content -->
         <div class="content">
             <div class="greeting">Dear {{customer_name}},</div>
-            
-            <div class="status-badge">Transaction Successful</div>
-            
+                        
             <div class="message">
                 Your {{transaction_type}} of <strong class="amount">{{amount}}</strong> has been successfully processed. 
                 {{#if is_transfer}}
@@ -267,6 +265,10 @@
                 <div class="detail-row">
                     <span class="detail-label">Transaction ID</span>
                     <span class="detail-value transaction-id">{{transaction_id}}</span>
+                </div>
+                <div class="detail-row">
+                    <span class="detail-label">Status</span>
+                    <span class="detail-value amount">{{transaction_status}}</span>
                 </div>
                 <div class="detail-row">
                     <span class="detail-label">Date & Time</span>
@@ -302,16 +304,17 @@
                     <span class="detail-label">Available Balance</span>
                     <span class="detail-value amount">{{available_balance}}</span>
                 </div>
+
             </div>
             
             <div class="security-note">
                 <strong>Security Note:</strong> If you did not initiate this transaction, please contact our support team immediately at support@mytransactx.com or call +234-XXX-XXX-XXXX.
             </div>
             
-            <div class="cta-section">
+            <!-- <div class="cta-section">
                 <a href="https://www.mytransactx.com/dashboard" class="button">View Dashboard</a>
                 <a href="https://www.mytransactx.com/transactions" class="button button-secondary">Transaction History</a>
-            </div>
+            </div> -->
         </div>
         
         <!-- Footer -->

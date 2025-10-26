@@ -60,6 +60,17 @@
             color: #374151;
             margin-bottom: 30px;
             line-height: 1.7;
+            display: flex;
+            justify-content: center;
+        }
+        
+        .message1 {
+            font-size: 16px;
+            color: #374151;
+            margin-bottom: 30px;
+            line-height: 1.7;
+            display: flex;
+            justify-content: center;
         }
         
         .credit-details {
@@ -143,6 +154,12 @@
             margin: 20px 0;
         }
         
+        .highlight {
+            color: #AB0B4B;
+            font-weight: 600;
+            text-align: center;
+        }
+        
         .social-links a {
             display: inline-block;
             margin: 0 8px;
@@ -193,10 +210,10 @@
         <div class="content">
             <div class="greeting">Dear {{customer_name}},</div>
             
-            <div class="credit-badge">Credit Received</div>
+            <!-- <div class="credit-badge">Credit Received</div> -->
             
             <div class="message">
-                You have been credited an amount of <strong class="amount">{{amount}}</strong> by {{sender_name}}.
+                You have been funded an amount of <strong class="amount">{{amount}}</strong> by {{sender_name}}.
             </div>
             
             <div class="credit-details">
@@ -217,13 +234,17 @@
                     <span class="detail-value">{{transaction_id}}</span>
                 </div>
                 <div class="detail-row">
+                    <span class="detail-label">Status</span>
+                    <span class="detail-value amount">{{transaction_status}}</span>
+                </div>
+                <div class="detail-row">
                     <span class="detail-label">Available Balance</span>
                     <span class="detail-value amount">{{available_balance}}</span>
                 </div>
             </div>
             
-            <div class="message">
-                Thank you for choosing TransactX!
+            <div class="message1">
+                Thank you for choosing <span class="highlight">TransactX</span>!
             </div>
         </div>
         
