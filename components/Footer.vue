@@ -54,7 +54,7 @@
               </h2>
               <ul class="text-gray-600 ">
                 <li class="mb-4">
-                  <NuxtLink href="/privacy-policy" class="hover:underline">Privacy Policy</NuxtLink>
+                  <NuxtLink href="./pages/privacy-policy" class="hover:underline">Privacy Policy</NuxtLink>
                 </li>
               </ul>
             </div>
