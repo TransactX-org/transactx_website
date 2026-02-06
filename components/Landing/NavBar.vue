@@ -20,19 +20,19 @@ const mobileMenuOpen = ref(false)
   <div class="bg-white">
     <header class="relative inset-x-0 top-0 z-50 lg:px-20">
       <nav class="flex items-center justify-between p-6 lg:px-0" aria-label="Global">
-        <div class="flex flex-row items-center gap-8xl">
+        <div class="flex flex-row items-center">
           <div class="flex lg:flex-1">
             <NuxtLink href="/" class="p-1.5 -m-1.5">
               <span class="sr-only">TransactX</span>
               <img class="h-9 w-auto" src="/transactx.svg" alt="TransactX Logo">
             </NuxtLink>
           </div>
-          <div class="hidden lg:flex lg:gap-x-20">
+          <div class="hidden lg:flex lg:gap-x-8 ml-10">
             <NuxtLink
               v-for="item in navigation"
               :key="item.name"
               :href="item.href"
-              class="leading-6 text-gray-800"
+              class="leading-6 text-gray-800 text-sm font-medium"
             >
               {{ item.name }}
             </NuxtLink>

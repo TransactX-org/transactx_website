@@ -1,3 +1,8 @@
+
+<script setup>
+// Pricing component
+</script>
+
 <template>
   <div>
     <section class="bg-white" id="Pricing">
@@ -236,8 +241,4 @@
     </section>
   </div>
 </template>
-
-<script setup>
-// Pricing component
-</script>
 
