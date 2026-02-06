@@ -10,9 +10,7 @@ export default defineNuxtConfig({
     '@vite-pwa/nuxt',
     'nuxt-headlessui',
   ],
-  compat: {
-    date: '2026-02-06',
-  },
+
   vite: {
     optimizeDeps: {
       include: ['@vite-pwa/nuxt'],
@@ -72,15 +70,7 @@ export default defineNuxtConfig({
     },
   },
 
-  pwa, // ensure pwa object is valid
-
   devtools: { enabled: true },
 
   components: { dirs: ['~/components'] },
-
-  vite: {
-    optimizeDeps: {
-      include: ['@vite-pwa/nuxt'], // fixes pre-transform import issues
-    },
-  },
 })

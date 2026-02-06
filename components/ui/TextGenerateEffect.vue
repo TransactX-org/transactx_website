@@ -17,9 +17,9 @@ const textContainer = ref<HTMLElement>()
 const wordRefs = ref<HTMLElement[]>([])
 const wordsArray = ref<string[]>([])
 
-function setWordRef(el: HTMLElement | null, idx: number) {
+function setWordRef(el: Element | null, idx: number) {
   if (el)
-    wordRefs.value[idx] = el
+    wordRefs.value[idx] = el as HTMLElement
 }
 
 async function animateWords() {
