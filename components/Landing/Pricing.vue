@@ -77,11 +77,11 @@
               Perfect for small businesses and startups
             </p>
             <div class="flex justify-center items-baseline my-8">
-              <span class="mr-2 text-5xl font-bold">₦2,700</span>
+              <span class="mr-2 text-5xl font-bold">₦2,000</span>
               <span class="text-gray-600">/month</span>
             </div>
             <div class="mb-4">
-              <span class="text-gray-500 line-through">₦3,000</span>
+              <span class="text-gray-500 line-through">₦2,500</span>
               <span class="ml-2 text-sm text-green-600 font-medium">Save 10%</span>
             </div>
             <!-- List -->
@@ -102,7 +102,7 @@
                 <svg class="flex-shrink-0 w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
                 </svg>
-                <span>Linked Bank Accounts: <span class="font-semibold">2</span></span>
+                <span>Linked Bank Accounts: <span class="font-semibold">3</span></span>
               </li>
               <li class="flex items-center space-x-3">
                 <svg class="flex-shrink-0 w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
@@ -133,11 +133,11 @@
               For growing businesses with advanced needs
             </p>
             <div class="flex justify-center items-baseline my-8">
-              <span class="mr-2 text-5xl font-bold">₦9,000</span>
+              <span class="mr-2 text-5xl font-bold">₦5,000</span>
               <span class="text-gray-600">/month</span>
             </div>
             <div class="mb-4">
-              <span class="text-gray-500 line-through">₦10,000</span>
+              <span class="text-gray-500 line-through">₦7,000</span>
               <span class="ml-2 text-sm text-green-600 font-medium">Save 10%</span>
             </div>
             <!-- List -->
@@ -164,7 +164,7 @@
                 <svg class="flex-shrink-0 w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
                 </svg>
-                <span>Sub Accounts: <span class="font-semibold">3</span></span>
+                <span>Sub Accounts: <span class="font-semibold">7</span></span>
               </li>
               <li class="flex items-center space-x-3">
                 <svg class="flex-shrink-0 w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">

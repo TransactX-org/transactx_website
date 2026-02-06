@@ -1,5 +1,5 @@
 import { pwa } from './config/pwa'
-import { appName, appDescription } from './constants/index'
+import { appDescription, appName } from './constants/index'
 
 export default defineNuxtConfig({
   modules: [
@@ -8,37 +8,40 @@ export default defineNuxtConfig({
     '@pinia/nuxt',
     '@nuxtjs/color-mode',
     '@vite-pwa/nuxt',
-    'nuxt-headlessui'
+    'nuxt-headlessui',
   ],
-
+  compat: {
+    date: '2026-02-06',
+  },
+  vite: {
+    optimizeDeps: {
+      include: ['@vite-pwa/nuxt'],
+    },
+  },
+  pwa,
   experimental: {
-    // when using generate, payload js assets included in sw precache manifest
-    // but missing on offline, disabling extraction it until fixed
     payloadExtraction: false,
-    // inlineSSRStyles: false,
     renderJsonPayloads: true,
     typedPages: true,
   },
 
   css: [
     '@unocss/reset/tailwind.css',
-    'assets/css/main.css'
+    'assets/css/main.css',
   ],
 
   plugins: [
-    { src: '~/plugins/aos', mode: 'client' }
+    { src: '~/plugins/aos', mode: 'client' },
   ],
 
   colorMode: {
     classSuffix: '',
-    preference: 'light'
+    preference: 'light',
   },
 
   nitro: {
     esbuild: {
-      options: {
-        target: 'esnext',
-      },
+      options: { target: 'esnext' },
     },
     prerender: {
       crawlLinks: false,
@@ -49,9 +52,7 @@ export default defineNuxtConfig({
 
   app: {
     head: {
-      htmlAttrs: {
-        lang: 'en'
-      },
+      htmlAttrs: { lang: 'en' },
       charset: 'utf-8',
       viewport: 'width=device-width,initial-scale=1',
       link: [
@@ -60,29 +61,26 @@ export default defineNuxtConfig({
         { rel: 'apple-touch-icon', href: '/favicon.svg' },
       ],
       meta: [
-        { name: 'viewport', content: 'width=device-width, initial-scale=1' },
         { name: 'title', content: appName },
-        { name: 'ogTitle', content: appName },
         { name: 'description', content: appDescription },
-        { name: 'ogDescription', content: appDescription }, 
-        { name: 'ogImage', content: "/public/transactx.svg" }, 
-        { name: 'twitterCard', content: "summary_large_image" },
+        { name: 'ogTitle', content: appName },
+        { name: 'ogDescription', content: appDescription },
+        { name: 'ogImage', content: '/transactx.svg' },
+        { name: 'twitterCard', content: 'summary_large_image' },
         { name: 'apple-mobile-web-app-status-bar-style', content: 'black-translucent' },
       ],
     },
   },
 
-  pwa,
+  pwa, // ensure pwa object is valid
 
-  devtools: {
-    enabled: true,
+  devtools: { enabled: true },
+
+  components: { dirs: ['~/components'] },
+
+  vite: {
+    optimizeDeps: {
+      include: ['@vite-pwa/nuxt'], // fixes pre-transform import issues
+    },
   },
-
-  components: {
-    dirs: [
-      '~/components',
-    ]
-  }
-
 })
-
