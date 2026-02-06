@@ -1,6 +1,6 @@
 <template>
   <main class="px-0 py-0">
     <slot />
-    <Footer/>
+    <Footer />
   </main>
 </template>

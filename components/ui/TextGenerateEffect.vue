@@ -1,26 +1,5 @@
-<template>
-  <div class="font-bold" :class="className">
-    <div class="mt-4">
-      <div 
-        class="text-black dark:text-white text-3xl leading-snug tracking-wide"
-        ref="textContainer"
-      >
-        <span
-          v-for="(word, idx) in wordsArray"
-          :key="`${word}-${idx}`"
-          :ref="(el) => setWordRef(el, idx)"
-          class="opacity-0 inline-block mr-1"
-          :style="{ filter: filter ? 'blur(10px)' : 'none' }"
-        >
-          {{ word }}
-        </span>
-      </div>
-    </div>
-  </div>
-</template>
-
 <script setup lang="ts">
-import { ref, onMounted, nextTick } from 'vue'
+import { nextTick, onMounted, ref } from 'vue'
 
 interface Props {
   words: string
@@ -31,24 +10,24 @@ interface Props {
 
 const props = withDefaults(defineProps<Props>(), {
   filter: true,
-  duration: 0.5
+  duration: 0.5,
 })
 
 const textContainer = ref<HTMLElement>()
 const wordRefs = ref<HTMLElement[]>([])
 const wordsArray = ref<string[]>([])
 
-const setWordRef = (el: HTMLElement | null, idx: number) => {
-  if (el) {
+function setWordRef(el: HTMLElement | null, idx: number) {
+  if (el)
     wordRefs.value[idx] = el
-  }
 }
 
-const animateWords = async () => {
+async function animateWords() {
   await nextTick()
-  
+
   const words = wordRefs.value
-  if (!words.length) return
+  if (!words.length)
+    return
 
   // Animate each word with stagger
   words.forEach((word, index) => {
@@ -64,10 +43,31 @@ const animateWords = async () => {
 
 onMounted(() => {
   wordsArray.value = props.words.split(' ')
-  
+
   // Start animation after a short delay
   setTimeout(() => {
     animateWords()
   }, 100)
 })
 </script>
+
+<template>
+  <div class="font-bold" :class="className">
+    <div class="mt-4">
+      <div
+        ref="textContainer"
+        class="text-3xl leading-snug tracking-wide text-black dark:text-white"
+      >
+        <span
+          v-for="(word, idx) in wordsArray"
+          :key="`${word}-${idx}`"
+          :ref="(el) => setWordRef(el, idx)"
+          class="mr-1 inline-block opacity-0"
+          :style="{ filter: filter ? 'blur(10px)' : 'none' }"
+        >
+          {{ word }}
+        </span>
+      </div>
+    </div>
+  </div>
+</template>

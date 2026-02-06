@@ -27,12 +27,12 @@ const mobileMenuOpen = ref(false)
               <img class="h-9 w-auto" src="/transactx.svg" alt="TransactX Logo">
             </NuxtLink>
           </div>
-          <div class="hidden lg:flex lg:gap-x-8 ml-10">
+          <div class="ml-10 hidden lg:flex lg:gap-x-8">
             <NuxtLink
               v-for="item in navigation"
               :key="item.name"
               :href="item.href"
-              class="leading-6 text-gray-800 text-sm font-medium"
+              class="text-sm font-medium leading-6 text-gray-800"
             >
               {{ item.name }}
             </NuxtLink>

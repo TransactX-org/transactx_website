@@ -1,3 +1,43 @@
+<script setup lang="ts">
+import { onMounted, ref } from 'vue'
+import FollowPointer from './FollowPointer.vue'
+
+interface Props {
+  title?: string
+  className?: string
+}
+
+defineProps<Props>()
+
+const containerRef = ref<HTMLElement>()
+const rect = ref<DOMRect | null>(null)
+const isInside = ref(false)
+const x = ref(0)
+const y = ref(0)
+
+onMounted(() => {
+  if (containerRef.value)
+    rect.value = containerRef.value.getBoundingClientRect()
+})
+
+function handleMouseMove(e: MouseEvent) {
+  if (rect.value && containerRef.value) {
+    const scrollX = window.scrollX
+    const scrollY = window.scrollY
+    x.value = e.clientX - rect.value.left + scrollX
+    y.value = e.clientY - rect.value.top + scrollY
+  }
+}
+
+function handleMouseEnter() {
+  isInside.value = true
+}
+
+function handleMouseLeave() {
+  isInside.value = false
+}
+</script>
+
 <template>
   <div
     ref="containerRef"
@@ -17,47 +57,6 @@
     <slot />
   </div>
 </template>
-
-<script setup lang="ts">
-import { ref, onMounted } from 'vue'
-import FollowPointer from './FollowPointer.vue'
-
-interface Props {
-  title?: string
-  className?: string
-}
-
-defineProps<Props>()
-
-const containerRef = ref<HTMLElement>()
-const rect = ref<DOMRect | null>(null)
-const isInside = ref(false)
-const x = ref(0)
-const y = ref(0)
-
-onMounted(() => {
-  if (containerRef.value) {
-    rect.value = containerRef.value.getBoundingClientRect()
-  }
-})
-
-const handleMouseMove = (e: MouseEvent) => {
-  if (rect.value && containerRef.value) {
-    const scrollX = window.scrollX
-    const scrollY = window.scrollY
-    x.value = e.clientX - rect.value.left + scrollX
-    y.value = e.clientY - rect.value.top + scrollY
-  }
-}
-
-const handleMouseEnter = () => {
-  isInside.value = true
-}
-
-const handleMouseLeave = () => {
-  isInside.value = false
-}
-</script>
 
 <style scoped>
 .pointer-fade-enter-active,

@@ -1,3 +1,68 @@
+<script setup lang="ts">
+import { computed, onMounted, onUnmounted, ref } from 'vue'
+
+interface Props {
+  rows?: number
+  cols?: number
+  cellSize?: number
+}
+
+const props = withDefaults(defineProps<Props>(), {
+  rows: 12,
+  cols: 30,
+  cellSize: 40,
+})
+
+const clickedCell = ref<number | null>(null)
+const cells = computed(() =>
+  Array.from({ length: props.rows * props.cols }, (_, idx) => idx),
+)
+
+function getCellStyle(idx: number) {
+  const rowIdx = Math.floor(idx / props.cols)
+  const colIdx = idx % props.cols
+
+  if (clickedCell.value === null) {
+    return {
+      '--cell-x': `${colIdx * props.cellSize}px`,
+      '--cell-y': `${rowIdx * props.cellSize}px`,
+      '--cell-size': `${props.cellSize}px`,
+    }
+  }
+
+  const clickedRowIdx = Math.floor(clickedCell.value / props.cols)
+  const clickedColIdx = clickedCell.value % props.cols
+  const distance = Math.hypot(clickedRowIdx - rowIdx, clickedColIdx - colIdx)
+
+  return {
+    '--cell-x': `${colIdx * props.cellSize}px`,
+    '--cell-y': `${rowIdx * props.cellSize}px`,
+    '--cell-size': `${props.cellSize}px`,
+    '--ripple-delay': `${distance * 50}ms`,
+    '--ripple-duration': `${300 + distance * 100}ms`,
+  }
+}
+
+function handleCellClick(idx: number) {
+  clickedCell.value = idx
+  setTimeout(() => {
+    clickedCell.value = null
+  }, 2000)
+}
+
+onMounted(() => {
+  // Auto-trigger ripple effect every 3 seconds
+  const interval = setInterval(() => {
+    const randomCell = Math.floor(Math.random() * cells.value.length)
+    handleCellClick(randomCell)
+  }, 3000)
+
+  onUnmounted(() => {
+    clearInterval(interval)
+  })
+})
+</script>
+
 <template>
   <div class="css-grid-background">
     <div class="grid-container">
@@ -12,71 +77,6 @@
     </div>
   </div>
 </template>
-
-<script setup lang="ts">
-import { ref, computed, onMounted, onUnmounted } from 'vue'
-
-interface Props {
-  rows?: number
-  cols?: number
-  cellSize?: number
-}
-
-const props = withDefaults(defineProps<Props>(), {
-  rows: 12,
-  cols: 30,
-  cellSize: 40
-})
-
-const clickedCell = ref<number | null>(null)
-const cells = computed(() => 
-  Array.from({ length: props.rows * props.cols }, (_, idx) => idx)
-)
-
-const getCellStyle = (idx: number) => {
-  const rowIdx = Math.floor(idx / props.cols)
-  const colIdx = idx % props.cols
-  
-  if (clickedCell.value === null) {
-    return {
-      '--cell-x': `${colIdx * props.cellSize}px`,
-      '--cell-y': `${rowIdx * props.cellSize}px`,
-      '--cell-size': `${props.cellSize}px`
-    }
-  }
-  
-  const clickedRowIdx = Math.floor(clickedCell.value / props.cols)
-  const clickedColIdx = clickedCell.value % props.cols
-  const distance = Math.hypot(clickedRowIdx - rowIdx, clickedColIdx - colIdx)
-  
-  return {
-    '--cell-x': `${colIdx * props.cellSize}px`,
-    '--cell-y': `${rowIdx * props.cellSize}px`,
-    '--cell-size': `${props.cellSize}px`,
-    '--ripple-delay': `${distance * 50}ms`,
-    '--ripple-duration': `${300 + distance * 100}ms`
-  }
-}
-
-const handleCellClick = (idx: number) => {
-  clickedCell.value = idx
-  setTimeout(() => {
-    clickedCell.value = null
-  }, 2000)
-}
-
-onMounted(() => {
-  // Auto-trigger ripple effect every 3 seconds
-  const interval = setInterval(() => {
-    const randomCell = Math.floor(Math.random() * cells.value.length)
-    handleCellClick(randomCell)
-  }, 3000)
-  
-  onUnmounted(() => {
-    clearInterval(interval)
-  })
-})
-</script>
 
 <style scoped>
 .css-grid-background {
@@ -101,7 +101,7 @@ onMounted(() => {
   mask: radial-gradient(ellipse at center, transparent 0%, black 20%, black 80%, transparent 100%);
   -webkit-mask: radial-gradient(ellipse at center, transparent 0%, black 20%, black 80%, transparent 100%);
   filter: blur(0.3px);
-  box-shadow: 
+  box-shadow:
     inset 0 0 20px 0 rgba(171, 11, 75, 0.05),
     0 0 30px 0 rgba(255, 255, 255, 0.1);
 }
@@ -113,7 +113,7 @@ onMounted(() => {
   transition: all 0.4s ease;
   cursor: pointer;
   border-radius: 4px;
-  box-shadow: 
+  box-shadow:
     0 0 0 0 rgba(171, 11, 75, 0),
     inset 0 0 0 0 rgba(255, 255, 255, 0.1);
   filter: blur(0.5px);
@@ -123,7 +123,7 @@ onMounted(() => {
   background: rgba(171, 11, 75, 0.08);
   border-color: rgba(171, 11, 75, 0.15);
   transform: scale(1.02);
-  box-shadow: 
+  box-shadow:
     0 0 8px 2px rgba(171, 11, 75, 0.1),
     inset 0 0 0 0 rgba(255, 255, 255, 0.2);
   filter: blur(0px);
@@ -143,7 +143,7 @@ onMounted(() => {
   50% {
     background: rgba(171, 11, 75, 0.12);
     transform: scale(1.08);
-    box-shadow: 
+    box-shadow:
       0 0 15px 4px rgba(171, 11, 75, 0.2),
       inset 0 0 0 0 rgba(255, 255, 255, 0.3);
     filter: blur(0px);
@@ -159,8 +159,8 @@ onMounted(() => {
 /* Responsive adjustments */
 @media (max-width: 768px) {
   .grid-container {
-    grid-template-columns: repeat(v-bind('Math.floor(props.cols / 2)'), v-bind('props.cellSize + "px"'));
-    grid-template-rows: repeat(v-bind('Math.floor(props.rows / 2)'), v-bind('props.cellSize + "px"'));
+    grid-template-columns: repeat(v-bind('Math.floor(props.cols / 2)'), v-bind('`${props.cellSize}px`'));
+    grid-template-rows: repeat(v-bind('Math.floor(props.rows / 2)'), v-bind('`${props.cellSize}px`'));
   }
 }
 </style>

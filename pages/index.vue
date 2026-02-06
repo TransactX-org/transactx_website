@@ -3,15 +3,15 @@
 
 <template>
   <div>
-  <LandingNavBanner/>
-  <LandingNavBar/>
-  <LandingHero/>
-  <LandingFeatures/>
-  <LandingProductUsers/>
-  <LandingCTA/>
-  <LandingNewsLetter/>
-  <LandingPricing/>
-  <LandingCEOMessage/>
-  <LandingFAQ/>
+    <LandingNavBanner />
+    <LandingNavBar />
+    <LandingHero />
+    <LandingFeatures />
+    <LandingProductUsers />
+    <LandingCTA />
+    <LandingNewsLetter />
+    <LandingPricing />
+    <LandingCEOMessage />
+    <LandingFAQ />
   </div>
 </template>
