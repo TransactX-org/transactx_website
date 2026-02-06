@@ -1,6 +1,6 @@
 <template>
   <div>
-    <footer class="p-4 bg-gray-100 pt-8xl pb-10">
+    <footer class="bg-gray-100 p-4 pb-10 pt-8xl">
       <div class="mx-auto max-w-screen-xl">
         <div class="lg:flex lg:justify-between">
           <div class="mb-6 md:mb-0">
@@ -9,35 +9,51 @@
                 src="/transactx.svg"
                 class="mr-3 h-10"
                 alt="TransactX"
-              />
+              >
             </NuxtLink>
           </div>
-          <div class="grid grid-cols-2 mt-20 md:mt-10 lg:mt-0 gap-5xl sm:gap-8xl sm:grid-cols-3">
+          <div class="grid grid-cols-2 mt-20 gap-5xl sm:grid-cols-3 lg:mt-0 md:mt-10 sm:gap-8xl">
             <div>
               <h2
-                class="mb-6 text-sm font-semibold text-gray-900 uppercase"
+                class="mb-6 text-sm font-semibold uppercase text-gray-900"
               >
                 Resources
               </h2>
-              <ul class="text-gray-600 ">
+              <ul class="text-gray-600">
                 <li class="mb-4">
-                  <NuxtLink href="/features" class="hover:underline">Features</NuxtLink>
+                  <NuxtLink href="/features" class="hover:underline">
+                    Features
+                  </NuxtLink>
                 </li>
                 <li class="mb-4">
-                  <NuxtLink href="/stories" class="hover:underline">Stories</NuxtLink>
+                  <NuxtLink href="/stories" class="hover:underline">
+                    Stories
+                  </NuxtLink>
+                </li>
+                <li class="mb-4">
+                  <NuxtLink href="/pricing" class="hover:underline">
+                    Pricing
+                  </NuxtLink>
+                </li>
+                <li class="mb-4">
+                  <NuxtLink href="/marketing" class="hover:underline">
+                    Marketing
+                  </NuxtLink>
                 </li>
                 <li>
-                  <NuxtLink href="/pricing" class="hover:underline">Pricing</NuxtLink>
+                  <NuxtLink href="/support" class="hover:underline">
+                    Support
+                  </NuxtLink>
                 </li>
               </ul>
             </div>
             <div>
               <h2
-                class="mb-6 text-sm font-semibold text-gray-900 uppercase"
+                class="mb-6 text-sm font-semibold uppercase text-gray-900"
               >
                 Follow us
               </h2>
-              <ul class="text-gray-600 ">
+              <ul class="text-gray-600">
                 <li class="mb-4">
                   <a href="https://x.com/mytransactx" target="_blank" rel="noopener noreferrer" class="hover:underline">X (Twitter)</a>
                 </li>
@@ -48,28 +64,29 @@
             </div>
             <div>
               <h2
-                class="mb-6 text-sm font-semibold text-gray-900 uppercase"
+                class="mb-6 text-sm font-semibold uppercase text-gray-900"
               >
                 Legal
               </h2>
-              <ul class="text-gray-600 ">
+              <ul class="text-gray-600">
                 <li class="mb-4">
-                  <NuxtLink href="/privacy-policy" class="hover:underline">Privacy Policy</NuxtLink>
+                  <NuxtLink href="/privacy-policy" class="hover:underline">
+                    Privacy Policy
+                  </NuxtLink>
                 </li>
               </ul>
             </div>
           </div>
         </div>
-        <hr class="my-6 border-gray-200 sm:mx-auto  lg:my-8" />
+        <hr class="my-6 border-gray-200 lg:my-8 sm:mx-auto">
         <div class="sm:flex sm:items-center sm:justify-between">
-          <span class="text-sm text-gray-500 sm:text-center"
-            >© {{ new Date().getFullYear() }} <NuxtLink href="/" class="hover:underline">TransactX™</NuxtLink>.
-             All Rights Reserved.
+          <span class="text-sm text-gray-500 sm:text-center">© {{ new Date().getFullYear() }} <NuxtLink href="/" class="hover:underline">TransactX™</NuxtLink>.
+            All Rights Reserved.
           </span>
-          <div class="flex mt-4 space-x-5 sm:justify-center sm:mt-0">
+          <div class="mt-4 flex sm:mt-0 sm:justify-center space-x-5">
             <a href="https://x.com/mytransactx" target="_blank" rel="noopener noreferrer" class="text-gray-500 hover:text-gray-900">
               <svg
-                class="w-8 h-8"
+                class="h-8 w-8"
                 fill="currentColor"
                 viewBox="0 0 24 24"
                 aria-hidden="true"
@@ -81,7 +98,7 @@
             </a>
             <a href="https://www.instagram.com/mytransactx/" target="_blank" rel="noopener noreferrer" class="text-gray-500 hover:text-gray-900">
               <svg
-                class="w-8 h-8"
+                class="h-8 w-8"
                 fill="currentColor"
                 viewBox="0 0 24 24"
                 aria-hidden="true"
