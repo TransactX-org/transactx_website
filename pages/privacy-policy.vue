@@ -49,7 +49,7 @@ useHead({
           <!-- Introduction -->
           <div class="prose-lg mb-12 max-w-none prose">
             <p class="leading-relaxed text-gray-700">
-              Welcome to TransactX ("we", "our", "us"). Your privacy is important to us. This Privacy Policy explains how we collect, use, share, and protect your personal information when you use www.mytransactx.com, our mobile app, and related services (collectively, the "Platform").
+              Welcome to TransactX ("we", "our", "us").TransactX is operated by TrackVault Limited,a company registered in Nigeria.The TransactX app and services are owned and managed by TrackVault Limited Your privacy is important to us. This Privacy Policy explains how we collect, use, share, and protect your personal information when you use www.mytransactx.com, our mobile app, and related services (collectively, the "Platform").
             </p>
             <p class="mt-4 leading-relaxed text-gray-700">
               By using our Platform, you agree to the terms of this Privacy Policy.
