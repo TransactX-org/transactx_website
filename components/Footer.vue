@@ -80,7 +80,7 @@
         </div>
         <hr class="my-6 border-gray-200 lg:my-8 sm:mx-auto">
         <div class="sm:flex sm:items-center sm:justify-between">
-          <span class="text-sm text-gray-500 sm:text-center">© {{ new Date().getFullYear() }} <NuxtLink href="/" class="hover:underline">TransactX™</NuxtLink>.
+          <span class="text-sm text-gray-500 sm:text-center">© {{ new Date().getFullYear() }} <NuxtLink href="/" class="hover:underline">TrackVault Limited™</NuxtLink>.
             All Rights Reserved.
           </span>
           <div class="mt-4 flex sm:mt-0 sm:justify-center space-x-5">
