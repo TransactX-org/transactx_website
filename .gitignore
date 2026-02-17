@@ -7,3 +7,4 @@ dist
 .idea/
 .netlify
 .DS_Store
+package-lock.json

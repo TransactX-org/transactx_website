@@ -21,16 +21,7 @@ export default defineConfig({
       scale: 1.2,
     }),
     presetTypography(),
-    presetWebFonts({
-      fonts: {
-        sans: 'DM Sans',
-        serif: 'DM Serif Display',
-        mono: 'DM Mono',
-      },
-      timeout: 30000, // Increase timeout to 30 seconds
-      inlineImports: false, // Don't block build on font loading
-      provider: 'google',
-    }),
+    // Web fonts loaded via HTML head link for better reliability
   ],
   transformers: [
     transformerDirectives(),

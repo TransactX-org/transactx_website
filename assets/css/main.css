@@ -1,3 +1,4 @@
+/* Custom TransactX colors */
 .tx-bg-primary {
   background-color: #ab0b4b;
 }
@@ -16,4 +17,9 @@
 
 .tx-border-primary {
   border-color: #ab0b4b;
+}
+
+/* Font families - fallback to system fonts if Google Fonts fail */
+:root {
+  font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
 }
