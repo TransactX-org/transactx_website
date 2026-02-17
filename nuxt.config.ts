@@ -16,11 +16,14 @@ export default defineNuxtConfig({
       include: ['@vite-pwa/nuxt'],
     },
   },
+
   pwa,
+
   experimental: {
     payloadExtraction: false,
     renderJsonPayloads: true,
     typedPages: true,
+    oxc: false, 
   },
 
   css: [
