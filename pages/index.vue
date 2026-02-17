@@ -10,7 +10,6 @@
     <LandingProductUsers />
     <LandingCTA />
     <LandingNewsLetter />
-    <LandingPricing />
     <LandingCEOMessage />
     <LandingFAQ />
   </div>
