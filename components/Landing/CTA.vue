@@ -12,23 +12,23 @@
           </defs>
         </svg>
         <div class="mx-auto max-w-xl text-center lg:mx-0 lg:flex-auto lg:py-32 lg:text-left" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
-          <h2 class="text-2xl font-bold tracking-tight text-white sm:text-3xl">
+          <h2 class="text-2xl text-white font-bold tracking-tight sm:text-3xl">
             Need Financial Support? <br> Request Money from Friends & Family!
           </h2>
-          <p class="mt-6 text-lg leading-8 text-gray-200">
+          <p class="mt-6 text-lg text-gray-200 leading-8">
             Running low on funds? No worries! With TransactX, you can easily request money from your trusted contacts and get back on track. It's all about building stronger financial relationships and supporting each other. 💸🤝
           </p>
           <div class="mt-10 flex items-center justify-center gap-x-6 lg:justify-start">
             <NuxtLink
               href="#"
-              class="tx-bg-primary flex transform items-center gap-2 border-1 border-white rounded-md px-5 py-3 text-sm font-semibold text-white shadow-sm transition duration-500 ease-in-out hover:scale-110 hover:opacity-90 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline focus-visible:outline-none hover:-translate-y-1"
+              class="tx-bg-primary flex transform items-center gap-2 border-1 border-white rounded-md px-5 py-3 text-sm text-white font-semibold shadow-sm transition duration-500 ease-in-out hover:scale-110 hover:opacity-90 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline focus-visible:outline-none hover:-translate-y-1"
             >
               <img class="h-5 w-auto" src="/apple-icon.svg" alt="App store">Get on iPhone
             </NuxtLink>
 
             <NuxtLink
               href="#"
-              class="tx-bg-secondary flex transform items-center gap-2 rounded-md px-5 py-3 text-sm font-semibold text-white shadow-sm transition duration-500 ease-in-out hover:scale-110 hover:transform hover:-translate-y-1"
+              class="tx-bg-secondary flex transform items-center gap-2 rounded-md px-5 py-3 text-sm text-white font-semibold shadow-sm transition duration-500 ease-in-out hover:scale-110 hover:transform hover:-translate-y-1"
             >
               <img class="h-5 w-auto" src="/google-icon.svg" alt="Play store">Get
               on Android

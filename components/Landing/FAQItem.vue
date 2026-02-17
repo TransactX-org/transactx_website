@@ -66,7 +66,7 @@ onUnmounted(() => {
       @click="$emit('toggle')"
     >
       <div class="flex items-center justify-between">
-        <h3 class="pr-4 text-lg font-medium text-gray-900">
+        <h3 class="pr-4 text-lg text-gray-900 font-medium">
           {{ question }}
         </h3>
         <div class="flex-shrink-0">
@@ -98,7 +98,7 @@ onUnmounted(() => {
     >
       <div v-if="isOpen" class="overflow-hidden">
         <div class="px-6 pb-4">
-          <div class="leading-relaxed text-gray-600">
+          <div class="text-gray-600 leading-relaxed">
             <span class="typing-text">{{ displayedText }}</span>
             <span v-if="isTyping" class="typing-cursor">|</span>
           </div>
@@ -116,10 +116,12 @@ onUnmounted(() => {
 }
 
 @keyframes blink {
-  0%, 50% {
+  0%,
+  50% {
     opacity: 1;
   }
-  51%, 100% {
+  51%,
+  100% {
     opacity: 0;
   }
 }

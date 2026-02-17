@@ -56,7 +56,7 @@ onMounted(() => {
     <div class="mt-4">
       <div
         ref="textContainer"
-        class="text-3xl leading-snug tracking-wide text-black dark:text-white"
+        class="text-3xl text-black leading-snug tracking-wide dark:text-white"
       >
         <span
           v-for="(word, idx) in wordsArray"

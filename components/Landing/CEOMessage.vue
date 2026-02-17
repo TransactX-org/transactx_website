@@ -7,7 +7,7 @@
     <div class="mx-auto max-w-2xl lg:max-w-4xl" data-aos="fade-up" data-aos-duration="1000">
       <img class="mx-auto h-12" src="/icon-black.svg" alt="Icon">
       <figure class="mt-10">
-        <blockquote class="text-center text-xl leading-8 text-gray-800 sm:text-2xl sm:leading-9">
+        <blockquote class="text-center text-xl text-gray-800 leading-8 sm:text-2xl sm:leading-9">
           <p>"We're building something truly special at TransactX. Our mission is to democratize financial services and empower every user with the tools they need to succeed. The future of banking is here, and we're excited to share it with you."</p>
         </blockquote>
         <figcaption class="mt-10">

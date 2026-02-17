@@ -33,18 +33,22 @@ email-templates/
 ## 📧 Template Categories
 
 ### Transaction Templates
+
 - **Transaction Confirmation**: For successful payments, transfers, deposits
 - **Bill Payment Confirmation**: For utility bills, subscriptions, etc.
 
 ### Authentication Templates
+
 - **Welcome Registration**: New user onboarding
 - **Login Notification**: Security alerts for new logins
 - **Password Reset**: Password reset requests and confirmations
 
 ### Security Templates
+
 - **Security Alert**: Suspicious activity notifications
 
 ### Marketing Templates
+
 - **Newsletter**: Weekly financial insights and tips
 
 ## 🔧 Template Variables
@@ -52,11 +56,13 @@ email-templates/
 All templates use handlebars-style variables ({{variable_name}}) for dynamic content:
 
 ### Common Variables
+
 - `{{customer_name}}` - Customer's full name
 - `{{logo_url}}` - TransactX logo URL
 - `{{current_year}}` - Current year for copyright
 
 ### Transaction Variables
+
 - `{{transaction_id}}` - Unique transaction identifier
 - `{{amount}}` - Transaction amount
 - `{{transaction_type}}` - Type of transaction
@@ -64,11 +70,13 @@ All templates use handlebars-style variables ({{variable_name}}) for dynamic con
 - `{{available_balance}}` - Customer's current balance
 
 ### Authentication Variables
+
 - `{{verification_code}}` - Email verification code
 - `{{reset_code}}` - Password reset code
 - `{{reset_link}}` - Password reset URL
 
 ### Security Variables
+
 - `{{alert_type}}` - Type of security alert
 - `{{ip_address}}` - IP address of suspicious activity
 - `{{location}}` - Geographic location
@@ -84,8 +92,9 @@ All templates use handlebars-style variables ({{variable_name}}) for dynamic con
 ## 📱 Responsive Design
 
 All templates are optimized for:
+
 - **Mobile**: 320px+ width
-- **Tablet**: 768px+ width  
+- **Tablet**: 768px+ width
 - **Desktop**: 1024px+ width
 
 ## 🎯 Best Practices
@@ -107,6 +116,7 @@ All templates are optimized for:
 ## 📞 Support
 
 For questions about email templates, contact:
+
 - **Email**: support@mytransactx.com
 - **Website**: https://www.mytransactx.com
 

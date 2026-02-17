@@ -1,7 +1,7 @@
 <script setup>
-import { ref } from 'vue'
 import { Dialog, DialogPanel } from '@headlessui/vue'
 import { Bars3Icon, XMarkIcon } from '@heroicons/vue/24/outline'
+import { ref } from 'vue'
 
 const navigation = [
   { name: 'Features', href: '#Features' },
@@ -32,7 +32,7 @@ const mobileMenuOpen = ref(false)
               v-for="item in navigation"
               :key="item.name"
               :href="item.href"
-              class="text-sm font-medium leading-6 text-gray-800"
+              class="text-sm text-gray-800 font-medium leading-6"
             >
               {{ item.name }}
             </NuxtLink>
@@ -48,12 +48,6 @@ const mobileMenuOpen = ref(false)
             <span class="sr-only">Open main menu</span>
             <Bars3Icon class="h-6 w-6" aria-hidden="true" />
           </button>
-        </div>
-
-        <div class="hidden lg:flex lg:flex-1 lg:justify-end">
-          <NuxtLink href="#TXToken" class="tx-bg-primary rounded-md px-6 py-3 text-sm text-white shadow-sm transition duration-500 ease-in-out hover:opacity-85">
-            TX token <span aria-hidden="true">&rarr;</span>
-          </NuxtLink>
         </div>
       </nav>
       <Dialog
@@ -87,7 +81,7 @@ const mobileMenuOpen = ref(false)
                   v-for="item in navigation"
                   :key="item.name"
                   :href="item.href"
-                  class="block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 -mx-3 hover:bg-gray-50"
+                  class="block rounded-lg px-3 py-2 text-base text-gray-900 font-semibold leading-7 -mx-3 hover:bg-gray-50"
                 >
                   {{ item.name }}
                 </NuxtLink>
@@ -95,7 +89,7 @@ const mobileMenuOpen = ref(false)
               <div class="py-6">
                 <NuxtLink
                   href="#TXToken"
-                  class="block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 -mx-3 hover:bg-gray-50"
+                  class="block rounded-lg px-3 py-2.5 text-base text-gray-900 font-semibold leading-7 -mx-3 hover:bg-gray-50"
                 >
                   Introducing TX token
                 </NuxtLink>

@@ -2,6 +2,8 @@ import { pwa } from './config/pwa'
 import { appDescription, appName } from './constants/index'
 
 export default defineNuxtConfig({
+  compatibilityDate: '2026-02-17',
+
   modules: [
     '@vueuse/nuxt',
     '@unocss/nuxt',
@@ -11,7 +13,6 @@ export default defineNuxtConfig({
     'nuxt-headlessui',
   ],
 
-  // 🔥 Force Vite to avoid oxc usage
   vite: {
     optimizeDeps: {
       include: ['@vite-pwa/nuxt'],
@@ -23,15 +24,12 @@ export default defineNuxtConfig({
 
   pwa,
 
-  // 🔥 Completely disable oxc
   experimental: {
     payloadExtraction: false,
     renderJsonPayloads: true,
     typedPages: true,
-    oxc: false,
   },
 
-  // 🔥 Extra safeguard
   typescript: {
     shim: false,
   },
@@ -41,25 +39,21 @@ export default defineNuxtConfig({
     'assets/css/main.css',
   ],
 
-  plugins: [
-    { src: '~/plugins/aos', mode: 'client' },
-  ],
-
   colorMode: {
     classSuffix: '',
     preference: 'light',
   },
 
   nitro: {
-    preset: 'netlify', // important for Netlify
+    preset: 'netlify',
     esbuild: {
       options: { target: 'esnext' },
     },
     prerender: {
-      crawlLinks: false,
-      routes: ['/'],
-      ignore: ['/hi'],
+      crawlLinks: true,
+      routes: ['/', '/privacy-policy', '/support', '/marketing'],
     },
+    compressPublicAssets: true,
   },
 
   app: {
@@ -75,10 +69,15 @@ export default defineNuxtConfig({
       meta: [
         { name: 'title', content: appName },
         { name: 'description', content: appDescription },
-        { name: 'ogTitle', content: appName },
-        { name: 'ogDescription', content: appDescription },
-        { name: 'ogImage', content: '/transactx.svg' },
-        { name: 'twitterCard', content: 'summary_large_image' },
+        { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+        { property: 'og:title', content: appName },
+        { property: 'og:description', content: appDescription },
+        { property: 'og:image', content: '/transactx.svg' },
+        { property: 'og:type', content: 'website' },
+        { name: 'twitter:card', content: 'summary_large_image' },
+        { name: 'twitter:title', content: appName },
+        { name: 'twitter:description', content: appDescription },
+        { name: 'twitter:image', content: '/transactx.svg' },
         { name: 'apple-mobile-web-app-status-bar-style', content: 'black-translucent' },
       ],
     },

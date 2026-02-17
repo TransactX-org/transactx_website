@@ -27,6 +27,9 @@ export default defineConfig({
         serif: 'DM Serif Display',
         mono: 'DM Mono',
       },
+      timeout: 30000, // Increase timeout to 30 seconds
+      inlineImports: false, // Don't block build on font loading
+      provider: 'google',
     }),
   ],
   transformers: [

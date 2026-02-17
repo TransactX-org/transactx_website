@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import TextGenerateEffect from '~/components/ui/TextGenerateEffect.vue'
 import CSSGridBackground from '~/components/ui/CSSGridBackground.vue'
 import FollowerPointerCard from '~/components/ui/FollowerPointerCard.vue'
+import TextGenerateEffect from '~/components/ui/TextGenerateEffect.vue'
 </script>
 
 <template>
@@ -14,7 +14,7 @@ import FollowerPointerCard from '~/components/ui/FollowerPointerCard.vue'
           <div class="mt-5xl w-full lg:w-0.9/2">
             <div class="mb-8 flex justify-center lg:justify-start">
               <div
-                class="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20"
+                class="relative rounded-full px-3 py-1 text-sm text-gray-600 leading-6 ring-1 ring-gray-900/10 hover:ring-gray-900/20"
               >
                 Want to learn about our journey?
                 <NuxtLink href="/stories" class="tx-text-primary font-semibold">
@@ -24,7 +24,7 @@ import FollowerPointerCard from '~/components/ui/FollowerPointerCard.vue'
               </div>
             </div>
             <div class="text-center lg:text-left">
-              <h1 class="lg:ttt text-5xl font-semibold leading-12 tracking-tight text-gray-900 lg:text-6xl" data-aos="fade-up" data-aos-duration="1000">
+              <h1 class="lg:ttt text-5xl text-gray-900 font-semibold leading-12 tracking-tight lg:text-6xl" data-aos="fade-up" data-aos-duration="1000">
                 <TextGenerateEffect
                   words="Monitor Bank Account(s) Transactions in Real Time"
                   :duration="1.2"
@@ -32,7 +32,7 @@ import FollowerPointerCard from '~/components/ui/FollowerPointerCard.vue'
                   class-name="text-5xl lg:text-6xl font-semibold text-gray-900"
                 />
               </h1>
-              <p class="mt-6 px-5 leading-8 text-gray-600 lg:px-0" data-aos="fade-up" data-aos-delay="250" data-aos-duration="1000">
+              <p class="mt-6 px-5 text-gray-600 leading-8 lg:px-0" data-aos="fade-up" data-aos-delay="250" data-aos-duration="1000">
                 Track your bank account transactions instantly, pay bills seamlessly,
                 and manage your personal wallet with ease. Join TransactX and transform
                 the way you handle your finances with our all-in-one financial platform.
@@ -62,7 +62,7 @@ import FollowerPointerCard from '~/components/ui/FollowerPointerCard.vue'
 </template>
 
 <style scoped>
-.ttt{
+.ttt {
   line-height: 55px !important;
 }
 </style>

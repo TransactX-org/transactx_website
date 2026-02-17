@@ -16,18 +16,18 @@
         >
         <div class="mt-4 md:mt-0">
           <h2
-            class="mb-4 text-4xl font-extrabold tracking-tight text-gray-900 dark:text-white"
+            class="mb-4 text-4xl text-gray-900 font-extrabold tracking-tight dark:text-white"
           >
             Let's create more tools and ideas that brings us together.
           </h2>
-          <p class="mb-6 font-light text-gray-500 md:text-lg dark:text-gray-400">
+          <p class="mb-6 text-gray-500 font-light md:text-lg dark:text-gray-400">
             Flowbite helps you connect with friends and communities of people who share
             your interests. Connecting with your friends and family as well as discovering
             new ones is easy with features like Groups.
           </p>
           <a
             href="#"
-            class="bg-primary-700 focus:ring-primary-300 hover:bg-primary-800 dark:focus:ring-primary-900 inline-flex items-center rounded-lg px-5 py-2.5 text-center text-sm font-medium text-white focus:ring-4"
+            class="bg-primary-700 focus:ring-primary-300 hover:bg-primary-800 dark:focus:ring-primary-900 inline-flex items-center rounded-lg px-5 py-2.5 text-center text-sm text-white font-medium focus:ring-4"
           >
             Get started
             <svg

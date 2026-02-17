@@ -15,7 +15,7 @@
           <div class="grid grid-cols-2 mt-20 gap-5xl sm:grid-cols-3 lg:mt-0 md:mt-10 sm:gap-8xl">
             <div>
               <h2
-                class="mb-6 text-sm font-semibold uppercase text-gray-900"
+                class="mb-6 text-sm text-gray-900 font-semibold uppercase"
               >
                 Resources
               </h2>
@@ -49,7 +49,7 @@
             </div>
             <div>
               <h2
-                class="mb-6 text-sm font-semibold uppercase text-gray-900"
+                class="mb-6 text-sm text-gray-900 font-semibold uppercase"
               >
                 Follow us
               </h2>
@@ -64,7 +64,7 @@
             </div>
             <div>
               <h2
-                class="mb-6 text-sm font-semibold uppercase text-gray-900"
+                class="mb-6 text-sm text-gray-900 font-semibold uppercase"
               >
                 Legal
               </h2>

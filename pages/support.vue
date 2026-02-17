@@ -23,7 +23,7 @@ useHead({
           </NuxtLink>
           <NuxtLink
             href="/"
-            class="inline-flex items-center border border-gray-300 rounded-md bg-white px-4 py-2 text-sm font-medium text-gray-700 transition-colors duration-200 hover:bg-gray-50"
+            class="inline-flex items-center border border-gray-300 rounded-md bg-white px-4 py-2 text-sm text-gray-700 font-medium transition-colors duration-200 hover:bg-gray-50"
           >
             ← Back to Home
           </NuxtLink>
@@ -37,7 +37,7 @@ useHead({
         <div class="px-8 py-12">
           <!-- Title -->
           <div class="mb-12 text-center">
-            <h1 class="mb-4 text-4xl font-bold text-gray-900">
+            <h1 class="mb-4 text-4xl text-gray-900 font-bold">
               Customer Support
             </h1>
             <div class="text-lg text-gray-600 space-y-2">
@@ -51,13 +51,13 @@ useHead({
               <div class="mb-4 text-4xl">
                 💬
               </div>
-              <h3 class="mb-2 text-lg font-medium text-gray-900">
+              <h3 class="mb-2 text-lg text-gray-900 font-medium">
                 Live Chat
               </h3>
               <p class="mb-4 text-gray-600">
                 Chat with our support team instantly
               </p>
-              <button class="font-medium text-blue-600 hover:text-blue-800">
+              <button class="text-blue-600 font-medium hover:text-blue-800">
                 Start Chat →
               </button>
             </div>
@@ -65,13 +65,13 @@ useHead({
               <div class="mb-4 text-4xl">
                 📧
               </div>
-              <h3 class="mb-2 text-lg font-medium text-gray-900">
+              <h3 class="mb-2 text-lg text-gray-900 font-medium">
                 Email Us
               </h3>
               <p class="mb-4 text-gray-600">
                 Get a response within 24 hours
               </p>
-              <a href="mailto:support@mytransactx.com" class="font-medium text-green-600 hover:text-green-800">
+              <a href="mailto:support@mytransactx.com" class="text-green-600 font-medium hover:text-green-800">
                 Send Email →
               </a>
             </div>
@@ -79,13 +79,13 @@ useHead({
               <div class="mb-4 text-4xl">
                 📞
               </div>
-              <h3 class="mb-2 text-lg font-medium text-gray-900">
+              <h3 class="mb-2 text-lg text-gray-900 font-medium">
                 Call Us
               </h3>
               <p class="mb-4 text-gray-600">
                 24/7 helpline for urgent issues
               </p>
-              <a href="tel:+2348008722672" class="font-medium text-purple-600 hover:text-purple-800">
+              <a href="tel:+2348008722672" class="text-purple-600 font-medium hover:text-purple-800">
                 Call Now →
               </a>
             </div>
@@ -95,7 +95,7 @@ useHead({
           <div class="space-y-12">
             <!-- Section 1 -->
             <section>
-              <h2 class="mb-6 text-2xl font-semibold text-gray-900">
+              <h2 class="mb-6 text-2xl text-gray-900 font-semibold">
                 1. Frequently Asked Questions
               </h2>
               <p class="mb-4 text-gray-700">
@@ -105,7 +105,7 @@ useHead({
               <div class="space-y-4">
                 <div class="border border-gray-200 rounded-lg">
                   <details class="group p-4">
-                    <summary class="flex cursor-pointer items-center justify-between font-medium text-gray-900">
+                    <summary class="flex cursor-pointer items-center justify-between text-gray-900 font-medium">
                       <span>How do I create a TransactX account?</span>
                       <span class="transition group-open:rotate-180">
                         <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6" /></svg>
@@ -119,7 +119,7 @@ useHead({
 
                 <div class="border border-gray-200 rounded-lg">
                   <details class="group p-4">
-                    <summary class="flex cursor-pointer items-center justify-between font-medium text-gray-900">
+                    <summary class="flex cursor-pointer items-center justify-between text-gray-900 font-medium">
                       <span>How do I send money to another TransactX user?</span>
                       <span class="transition group-open:rotate-180">
                         <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6" /></svg>
@@ -133,7 +133,7 @@ useHead({
 
                 <div class="border border-gray-200 rounded-lg">
                   <details class="group p-4">
-                    <summary class="flex cursor-pointer items-center justify-between font-medium text-gray-900">
+                    <summary class="flex cursor-pointer items-center justify-between text-gray-900 font-medium">
                       <span>How can I link my bank account?</span>
                       <span class="transition group-open:rotate-180">
                         <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6" /></svg>
@@ -147,7 +147,7 @@ useHead({
 
                 <div class="border border-gray-200 rounded-lg">
                   <details class="group p-4">
-                    <summary class="flex cursor-pointer items-center justify-between font-medium text-gray-900">
+                    <summary class="flex cursor-pointer items-center justify-between text-gray-900 font-medium">
                       <span>What should I do if my transaction fails?</span>
                       <span class="transition group-open:rotate-180">
                         <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6" /></svg>
@@ -161,7 +161,7 @@ useHead({
 
                 <div class="border border-gray-200 rounded-lg">
                   <details class="group p-4">
-                    <summary class="flex cursor-pointer items-center justify-between font-medium text-gray-900">
+                    <summary class="flex cursor-pointer items-center justify-between text-gray-900 font-medium">
                       <span>How do I reset my PIN?</span>
                       <span class="transition group-open:rotate-180">
                         <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6" /></svg>
@@ -175,7 +175,7 @@ useHead({
 
                 <div class="border border-gray-200 rounded-lg">
                   <details class="group p-4">
-                    <summary class="flex cursor-pointer items-center justify-between font-medium text-gray-900">
+                    <summary class="flex cursor-pointer items-center justify-between text-gray-900 font-medium">
                       <span>Is my personal information secure?</span>
                       <span class="transition group-open:rotate-180">
                         <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6" /></svg>
@@ -191,7 +191,7 @@ useHead({
 
             <!-- Section 2 -->
             <section>
-              <h2 class="mb-6 text-2xl font-semibold text-gray-900">
+              <h2 class="mb-6 text-2xl text-gray-900 font-semibold">
                 2. Contact Options
               </h2>
               <p class="mb-4 text-gray-700">
@@ -204,7 +204,7 @@ useHead({
                     📧
                   </div>
                   <div>
-                    <h3 class="font-medium text-gray-900">
+                    <h3 class="text-gray-900 font-medium">
                       Email Support
                     </h3>
                     <p class="text-gray-600">
@@ -221,7 +221,7 @@ useHead({
                     📞
                   </div>
                   <div>
-                    <h3 class="font-medium text-gray-900">
+                    <h3 class="text-gray-900 font-medium">
                       Phone Support
                     </h3>
                     <p class="text-gray-600">
@@ -238,7 +238,7 @@ useHead({
                     💬
                   </div>
                   <div>
-                    <h3 class="font-medium text-gray-900">
+                    <h3 class="text-gray-900 font-medium">
                       Live Chat
                     </h3>
                     <p class="text-gray-600">
@@ -255,7 +255,7 @@ useHead({
                     🐦
                   </div>
                   <div>
-                    <h3 class="font-medium text-gray-900">
+                    <h3 class="text-gray-900 font-medium">
                       Social Media
                     </h3>
                     <p class="text-gray-600">
@@ -271,14 +271,14 @@ useHead({
 
             <!-- Section 3 -->
             <section>
-              <h2 class="mb-6 text-2xl font-semibold text-gray-900">
+              <h2 class="mb-6 text-2xl text-gray-900 font-semibold">
                 3. Business Support
               </h2>
               <p class="mb-4 text-gray-700">
                 For business accounts and enterprise solutions:
               </p>
               <div class="rounded-lg bg-gray-50 p-6">
-                <h3 class="mb-2 text-lg font-medium text-gray-900">
+                <h3 class="mb-2 text-lg text-gray-900 font-medium">
                   Business Support Team
                 </h3>
                 <p class="mb-1 text-gray-700">
@@ -296,7 +296,7 @@ useHead({
 
             <!-- Section 4 -->
             <section>
-              <h2 class="mb-6 text-2xl font-semibold text-gray-900">
+              <h2 class="mb-6 text-2xl text-gray-900 font-semibold">
                 4. Report an Issue
               </h2>
               <p class="mb-4 text-gray-700">
@@ -316,14 +316,14 @@ useHead({
 
             <!-- Section 5 -->
             <section>
-              <h2 class="mb-6 text-2xl font-semibold text-gray-900">
+              <h2 class="mb-6 text-2xl text-gray-900 font-semibold">
                 5. Emergency Contacts
               </h2>
               <p class="mb-4 text-gray-700">
                 For urgent security concerns or fraudulent activity:
               </p>
               <div class="rounded-lg bg-red-50 p-6">
-                <h3 class="mb-2 text-lg font-medium text-red-900">
+                <h3 class="mb-2 text-lg text-red-900 font-medium">
                   ⚠️ Security & Fraud Team
                 </h3>
                 <p class="mb-1 text-red-700">
@@ -341,7 +341,7 @@ useHead({
 
             <!-- Section 6 -->
             <section>
-              <h2 class="mb-6 text-2xl font-semibold text-gray-900">
+              <h2 class="mb-6 text-2xl text-gray-900 font-semibold">
                 6. Self-Service Resources
               </h2>
               <p class="mb-4 text-gray-700">
@@ -350,19 +350,19 @@ useHead({
               <div class="grid gap-4 md:grid-cols-2">
                 <a href="#" class="flex items-center border border-gray-200 rounded-lg p-4 transition-colors hover:bg-gray-50">
                   <span class="mr-3 text-2xl">📖</span>
-                  <span class="font-medium text-gray-900">Knowledge Base</span>
+                  <span class="text-gray-900 font-medium">Knowledge Base</span>
                 </a>
                 <a href="#" class="flex items-center border border-gray-200 rounded-lg p-4 transition-colors hover:bg-gray-50">
                   <span class="mr-3 text-2xl">🎓</span>
-                  <span class="font-medium text-gray-900">Video Tutorials</span>
+                  <span class="text-gray-900 font-medium">Video Tutorials</span>
                 </a>
                 <a href="#" class="flex items-center border border-gray-200 rounded-lg p-4 transition-colors hover:bg-gray-50">
                   <span class="mr-3 text-2xl">📄</span>
-                  <span class="font-medium text-gray-900">User Guides</span>
+                  <span class="text-gray-900 font-medium">User Guides</span>
                 </a>
                 <a href="#" class="flex items-center border border-gray-200 rounded-lg p-4 transition-colors hover:bg-gray-50">
                   <span class="mr-3 text-2xl">❓</span>
-                  <span class="font-medium text-gray-900">Community Forum</span>
+                  <span class="text-gray-900 font-medium">Community Forum</span>
                 </a>
               </div>
             </section>
@@ -376,26 +376,30 @@ useHead({
 <style scoped>
 /* Custom styles for better readability */
 .prose h2 {
-  @apply text-gray-900;
+  color: rgb(17 24 39);
 }
 
 .prose h3 {
-  @apply text-gray-900;
+  color: rgb(17 24 39);
 }
 
 .prose p {
-  @apply text-gray-700;
+  color: rgb(55 65 81);
 }
 
 .prose ul {
-  @apply text-gray-700;
+  color: rgb(55 65 81);
 }
 
 .prose a {
-  @apply text-blue-600 hover:text-blue-800;
+  color: rgb(37 99 235);
 }
 
-tx-bg-primary {
+.prose a:hover {
+  color: rgb(30 64 175);
+}
+
+.tx-bg-primary {
   background-color: #000000;
 }
 </style>

@@ -48,7 +48,7 @@ function toggleFAQ(index: number) {
 </script>
 
 <template>
-  <div id="FAQs" class="mb-5xl" data-as="fade-up" data-aos-duration="1000">
+  <div id="FAQs" class="mb-5xl" data-aos="fade-up" data-aos-duration="1000">
     <section class="bg-white">
       <div class="mx-auto max-w-screen-xl px-4 py-8 lg:px-6 sm:py-16">
         <h2

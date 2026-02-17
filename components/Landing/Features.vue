@@ -36,23 +36,23 @@ const features = [
         <h2 class="tx-text-primary text-base font-semibold leading-7">
           Our Features
         </h2>
-        <p class="mt-2 text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl">
+        <p class="mt-2 text-3xl text-gray-900 font-semibold tracking-tight sm:text-4xl">
           Everything you need to streamline your finances
         </p>
-        <p class="mt-6 text-lg leading-8 text-gray-600">
+        <p class="mt-6 text-lg text-gray-600 leading-8">
           Whether you're looking to streamline your finances, stay on top of bills, or securely manage your personal funds, we got you covered.
         </p>
       </div>
       <div class="mx-auto mt-16 max-w-2xl lg:mt-24 sm:mt-20 lg:max-w-6xl">
         <dl class="grid grid-cols-1 max-w-xl gap-x-8 gap-y-14 lg:grid-cols-2 lg:max-w-none lg:gap-y-20">
           <div v-for="feature in features" :key="feature.name" class="relative pl-20" data-aos="fade-up" data-aos-duration="2000">
-            <dt class="text-base font-semibold leading-7 text-gray-900">
+            <dt class="text-base text-gray-900 font-semibold leading-7">
               <div class="tx-bg-secondary absolute left-0 top-0 h-15 w-15 flex items-center justify-center rounded-lg">
                 <component :is="feature.icon" class="h-8 w-8 text-white" aria-hidden="true" />
               </div>
               {{ feature.name }}
             </dt>
-            <dd class="mt-2 text-base leading-7 text-gray-700 lg:text-justify">
+            <dd class="mt-2 text-base text-gray-700 leading-7 lg:text-justify">
               {{ feature.description }}
             </dd>
           </div>

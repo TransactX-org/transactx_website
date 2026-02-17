@@ -21,7 +21,7 @@ onMounted(() => {
 })
 
 function handleMouseMove(e: MouseEvent) {
-  if (rect.value && containerRef.value) {
+  if (rect.value && containerRef.value && typeof window !== 'undefined') {
     const scrollX = window.scrollX
     const scrollY = window.scrollY
     x.value = e.clientX - rect.value.left + scrollX
@@ -42,9 +42,9 @@ function handleMouseLeave() {
   <div
     ref="containerRef"
     class="relative"
-    @mouse-move="handleMouseMove"
-    @mouse-enter="handleMouseEnter"
-    @mouse-leave="handleMouseLeave"
+    @mousemove="handleMouseMove"
+    @mouseenter="handleMouseEnter"
+    @mouseleave="handleMouseLeave"
   >
     <Transition name="pointer-fade">
       <FollowPointer

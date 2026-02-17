@@ -38,17 +38,17 @@ const features = [
   <div id="Stories" class="mt-9xl py-10 sm:py-20">
     <div class="mx-auto max-w-7xl px-6 py-10 lg:px-5">
       <div class="mx-auto max-w-3xl md:text-center" data-aos="fade-up" data-aos-duration="1000">
-        <p class="mt-2 text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
+        <p class="mt-2 text-4xl text-gray-900 font-semibold tracking-tight sm:text-5xl">
           <span class="tx-text-primary">Revolutionize </span> Your Business.
         </p>
-        <p class="mt-6 text-lg leading-8 text-gray-600">
+        <p class="mt-6 text-lg text-gray-600 leading-8">
           Get the most out of TransactX by leveraging on the service that is most tailored to you.
         </p>
       </div>
       <div class="mx-auto mb-10 mt-16 max-w-2xl lg:mt-24 sm:mt-20 lg:max-w-7xl">
         <dl class="grid grid-cols-1 max-w-2xl gap-x-6 gap-y-10 lg:grid-cols-2 lg:max-w-none lg:gap-y-16">
           <div v-for="feature in features" :key="feature.name" class="relative cursor-pointer rounded-4 bg-white p-10 shadow-2xl shadow-gray-2" data-aos="fade-up" data-aos-duration="2000">
-            <dt class="text-2xl font-semibold leading-10 text-gray-800">
+            <dt class="text-2xl text-gray-800 font-semibold leading-10">
               <div class="absolute right-5 top-10 h-10 w-10 flex items-center justify-center rounded-lg bg-gray/5">
                 <component :is="feature.icon" class="tx-text-secondary h-6 w-6" aria-hidden="true" />
               </div>
@@ -61,7 +61,7 @@ const features = [
             <dd class="tx-text-primary mt-2 text-base leading-7">
               {{ feature.domain }}
             </dd>
-            <dd class="mt-2 text-base leading-7 text-gray-700">
+            <dd class="mt-2 text-base text-gray-700 leading-7">
               {{ feature.description }}
             </dd>
           </div>
@@ -72,7 +72,7 @@ const features = [
 </template>
 
 <style scoped>
-#Stories{
-background-color: rgb(248, 248, 248);
+#Stories {
+  background-color: rgb(248, 248, 248);
 }
 </style>

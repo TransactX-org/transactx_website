@@ -23,7 +23,7 @@ useHead({
           </NuxtLink>
           <NuxtLink
             href="/"
-            class="inline-flex items-center border border-gray-300 rounded-md bg-white px-4 py-2 text-sm font-medium text-gray-700 transition-colors duration-200 hover:bg-gray-50"
+            class="inline-flex items-center border border-gray-300 rounded-md bg-white px-4 py-2 text-sm text-gray-700 font-medium transition-colors duration-200 hover:bg-gray-50"
           >
             ← Back to Home
           </NuxtLink>
@@ -37,7 +37,7 @@ useHead({
         <div class="px-8 py-12">
           <!-- Title -->
           <div class="mb-12 text-center">
-            <h1 class="mb-4 text-4xl font-bold text-gray-900">
+            <h1 class="mb-4 text-4xl text-gray-900 font-bold">
               Marketing & Partnerships
             </h1>
             <div class="text-lg text-gray-600 space-y-2">
@@ -46,8 +46,8 @@ useHead({
           </div>
 
           <!-- Introduction -->
-          <div class="prose-lg mb-12 max-w-none prose">
-            <p class="leading-relaxed text-gray-700">
+          <div class="mb-12 max-w-none prose prose-lg">
+            <p class="text-gray-700 leading-relaxed">
               At TransactX, we believe in empowering businesses with cutting-edge payment solutions that drive growth, enhance customer experience, and streamline financial operations. Our marketing philosophy centers on delivering value, building trust, and fostering long-term partnerships.
             </p>
           </div>
@@ -56,7 +56,7 @@ useHead({
           <div class="space-y-12">
             <!-- Section 1 -->
             <section>
-              <h2 class="mb-6 text-2xl font-semibold text-gray-900">
+              <h2 class="mb-6 text-2xl text-gray-900 font-semibold">
                 1. Our Marketing Approach
               </h2>
               <p class="mb-4 text-gray-700">
@@ -65,7 +65,7 @@ useHead({
 
               <div class="space-y-6">
                 <div>
-                  <h3 class="mb-3 text-lg font-medium text-gray-900">
+                  <h3 class="mb-3 text-lg text-gray-900 font-medium">
                     a. Digital Marketing
                   </h3>
                   <ul class="ml-4 list-disc list-inside text-gray-700 space-y-1">
@@ -77,7 +77,7 @@ useHead({
                 </div>
 
                 <div>
-                  <h3 class="mb-3 text-lg font-medium text-gray-900">
+                  <h3 class="mb-3 text-lg text-gray-900 font-medium">
                     b. Strategic Partnerships
                   </h3>
                   <ul class="ml-4 list-disc list-inside text-gray-700 space-y-1">
@@ -89,7 +89,7 @@ useHead({
                 </div>
 
                 <div>
-                  <h3 class="mb-3 text-lg font-medium text-gray-900">
+                  <h3 class="mb-3 text-lg text-gray-900 font-medium">
                     c. Events and Sponsorships
                   </h3>
                   <ul class="ml-4 list-disc list-inside text-gray-700 space-y-1">
@@ -103,7 +103,7 @@ useHead({
 
             <!-- Section 2 -->
             <section>
-              <h2 class="mb-6 text-2xl font-semibold text-gray-900">
+              <h2 class="mb-6 text-2xl text-gray-900 font-semibold">
                 2. Why Choose TransactX?
               </h2>
               <p class="mb-4 text-gray-700">
@@ -121,7 +121,7 @@ useHead({
 
             <!-- Section 3 -->
             <section>
-              <h2 class="mb-6 text-2xl font-semibold text-gray-900">
+              <h2 class="mb-6 text-2xl text-gray-900 font-semibold">
                 3. Success Stories
               </h2>
               <p class="mb-4 text-gray-700">
@@ -129,7 +129,7 @@ useHead({
               </p>
               <div class="grid gap-6 md:grid-cols-2">
                 <div class="rounded-lg bg-gray-50 p-6">
-                  <h3 class="mb-2 text-lg font-medium text-gray-900">
+                  <h3 class="mb-2 text-lg text-gray-900 font-medium">
                     E-commerce Success
                   </h3>
                   <p class="text-gray-700">
@@ -140,7 +140,7 @@ useHead({
                   </p>
                 </div>
                 <div class="rounded-lg bg-gray-50 p-6">
-                  <h3 class="mb-2 text-lg font-medium text-gray-900">
+                  <h3 class="mb-2 text-lg text-gray-900 font-medium">
                     Restaurant Group
                   </h3>
                   <p class="text-gray-700">
@@ -155,7 +155,7 @@ useHead({
 
             <!-- Section 4 -->
             <section>
-              <h2 class="mb-6 text-2xl font-semibold text-gray-900">
+              <h2 class="mb-6 text-2xl text-gray-900 font-semibold">
                 4. Partnership Opportunities
               </h2>
               <p class="mb-4 text-gray-700">
@@ -171,7 +171,7 @@ useHead({
 
             <!-- Section 5 -->
             <section>
-              <h2 class="mb-6 text-2xl font-semibold text-gray-900">
+              <h2 class="mb-6 text-2xl text-gray-900 font-semibold">
                 5. Brand Guidelines
               </h2>
               <p class="mb-4 text-gray-700">
@@ -190,14 +190,14 @@ useHead({
 
             <!-- Section 6 -->
             <section>
-              <h2 class="mb-6 text-2xl font-semibold text-gray-900">
+              <h2 class="mb-6 text-2xl text-gray-900 font-semibold">
                 6. Contact Our Marketing Team
               </h2>
               <p class="mb-4 text-gray-700">
                 For marketing inquiries, partnerships, or collaboration opportunities:
               </p>
               <div class="rounded-lg bg-gray-50 p-6">
-                <h3 class="mb-2 text-lg font-medium text-gray-900">
+                <h3 class="mb-2 text-lg text-gray-900 font-medium">
                   TransactX Marketing Team
                 </h3>
                 <p class="mb-1 text-gray-700">
@@ -223,23 +223,27 @@ useHead({
 <style scoped>
 /* Custom styles for better readability */
 .prose h2 {
-  @apply text-gray-900;
+  color: rgb(17 24 39);
 }
 
 .prose h3 {
-  @apply text-gray-900;
+  color: rgb(17 24 39);
 }
 
 .prose p {
-  @apply text-gray-700;
+  color: rgb(55 65 81);
 }
 
 .prose ul {
-  @apply text-gray-700;
+  color: rgb(55 65 81);
 }
 
 .prose a {
-  @apply text-blue-600 hover:text-blue-800;
+  color: rgb(37 99 235);
+}
+
+.prose a:hover {
+  color: rgb(30 64 175);
 }
 
 .tx-bg-primary {
