@@ -1,9 +1,11 @@
 [build.environment]
   NODE_VERSION = "18"
+  NPM_CONFIG_OPTIONAL = "true"
+  PNPM_HOME = "/opt/buildhome/.pnpm"
   PNPM_FLAGS = "--no-frozen-lockfile"
 
 [build]
-  command = "pnpm install --no-frozen-lockfile && pnpm run build"
+  command = "pnpm install --no-frozen-lockfile --config.optional=true && pnpm run build"
   publish = ".output/public"
 
 [[redirects]]
