@@ -11,19 +11,29 @@ export default defineNuxtConfig({
     'nuxt-headlessui',
   ],
 
+  // 🔥 Force Vite to avoid oxc usage
   vite: {
     optimizeDeps: {
       include: ['@vite-pwa/nuxt'],
+    },
+    esbuild: {
+      target: 'esnext',
     },
   },
 
   pwa,
 
+  // 🔥 Completely disable oxc
   experimental: {
     payloadExtraction: false,
     renderJsonPayloads: true,
     typedPages: true,
-    oxc: false, 
+    oxc: false,
+  },
+
+  // 🔥 Extra safeguard
+  typescript: {
+    shim: false,
   },
 
   css: [
@@ -41,6 +51,7 @@ export default defineNuxtConfig({
   },
 
   nitro: {
+    preset: 'netlify', // important for Netlify
     esbuild: {
       options: { target: 'esnext' },
     },
@@ -73,7 +84,7 @@ export default defineNuxtConfig({
     },
   },
 
-  devtools: { enabled: true },
+  devtools: { enabled: false }, // disable in production
 
   components: { dirs: ['~/components'] },
 })
