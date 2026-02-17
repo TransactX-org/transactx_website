@@ -1,9 +1,10 @@
 [build.environment]
-  NODE_VERSION = "16"
+  NODE_VERSION = "18"
+  PNPM_FLAGS = "--no-frozen-lockfile"
 
 [build]
-  publish = "dist"
-  command = "pnpm run build"
+  command = "pnpm install --no-frozen-lockfile && pnpm run build"
+  publish = ".output/public"
 
 [[redirects]]
   from = "/*"
