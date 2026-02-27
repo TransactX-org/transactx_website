@@ -39,7 +39,7 @@ import TextGenerateEffect from '~/components/ui/TextGenerateEffect.vue'
               </p>
               <div class="mt-10 flex items-center justify-center gap-x-6 lg:justify-start">
                 <NuxtLink href="#appstore">
-                  <a href="https://apps.apple.com/ng/app/transactx-by-trackvault/id6753362535><img class="pointer" src="/app-store.svg" width="150" alt="App store" />
+                  <img class="pointer" src="/app-store.svg" width="150" alt="App store" />
                 </NuxtLink>
 
                 <NuxtLink href="#playstore">
