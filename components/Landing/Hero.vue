@@ -24,22 +24,15 @@ import TextGenerateEffect from '~/components/ui/TextGenerateEffect.vue'
               </div>
             </div>
             <div class="text-center lg:text-left">
-              <h1 class="lg:ttt text-5xl text-gray-900 font-semibold leading-12 tracking-tight lg:text-6xl" data-aos="fade-up" data-aos-duration="1000">
-                <TextGenerateEffect
-                  words="Monitor Bank Account(s) Transactions in Real Time"
-                  :duration="1.2"
-                  :filter="true"
-                  class-name="text-5xl lg:text-6xl font-semibold text-gray-900"
-                />
-              </h1>
+              <h1 class="lg:ttt text-5xl text-gray-900 font-semibold leading-12 tracking-tight lg:text-6xl" data-aos="fade-up" data-aos-duration="1000" />
               <p class="mt-6 px-5 text-gray-600 leading-8 lg:px-0" data-aos="fade-up" data-aos-delay="250" data-aos-duration="1000">
                 Track your bank account transactions instantly, pay bills seamlessly,
                 and manage your personal wallet with ease. Join TransactX and transform
                 the way you handle your finances with our all-in-one financial platform.
               </p>
               <div class="mt-10 flex items-center justify-center gap-x-6 lg:justify-start">
-                <NuxtLink href="#appstore">
-                  <img class="pointer" src="/app-store.svg" width="150" alt="App store" />
+                <NuxtLink href="https://apps.apple.com/ng/app/transactx-by-trackvault/id6753362535">
+                  <img class="pointer" src="/app-store.svg" width="150" alt="App store">
                 </NuxtLink>
 
                 <NuxtLink href="#playstore">
