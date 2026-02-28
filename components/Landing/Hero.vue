@@ -35,23 +35,22 @@ import TextGenerateEffect from '~/components/ui/TextGenerateEffect.vue'
               and manage your personal wallet with ease. Join TransactX and transform
               the way you handle your finances with our all-in-one financial platform.
             </p>
-
             <div class="mt-10 flex items-center justify-center gap-x-6 lg:justify-start">
               <NuxtLink href="https://apps.apple.com/ng/app/transactx-by-trackvault/id6753362535">
                 <img class="pointer" src="/app-store.svg" width="150" alt="App store">
               </NuxtLink>
 
-              <NuxtLink href="#playstore">
+              <a href="/TransactX.apk" download>
                 <img class="pointer" src="/google-play.svg" width="165" alt="Google play">
-              </NuxtLink>
+              </a>
             </div>
           </div>
+        </div>
 
-          <!--  -->
-          <div class="w-full flex justify-center lg:w-1/2">
-            <div data-aos="zoom-in" data-aos-duration="2000">
-              <img src="/transactxx.png" class="mt-7xl h-auto w-3xl lg:mt--15 md:mt-9xl" alt="Hero Image">
-            </div>
+        <!--  -->
+        <div class="w-full flex justify-center lg:w-1/2">
+          <div data-aos="zoom-in" data-aos-duration="2000">
+            <img src="/transactxx.png" class="mt-7xl h-auto w-3xl lg:mt--15 md:mt-9xl" alt="Hero Image">
           </div>
         </div>
       </div>

@@ -20,14 +20,14 @@
           </p>
           <div class="mt-10 flex items-center justify-center gap-x-6 lg:justify-start">
             <NuxtLink
-              href="#"
+              href="https://apps.apple.com/ng/app/transactx-by-trackvault/id6753362535"
               class="tx-bg-primary flex transform items-center gap-2 border-1 border-white rounded-md px-5 py-3 text-sm text-white font-semibold shadow-sm transition duration-500 ease-in-out hover:scale-110 hover:opacity-90 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline focus-visible:outline-none hover:-translate-y-1"
             >
               <img class="h-5 w-auto" src="/apple-icon.svg" alt="App store">Get on iPhone
             </NuxtLink>
 
             <NuxtLink
-              href="#"
+              href="public/TransactX.apk"
               class="tx-bg-secondary flex transform items-center gap-2 rounded-md px-5 py-3 text-sm text-white font-semibold shadow-sm transition duration-500 ease-in-out hover:scale-110 hover:transform hover:-translate-y-1"
             >
               <img class="h-5 w-auto" src="/google-icon.svg" alt="Play store">Get
