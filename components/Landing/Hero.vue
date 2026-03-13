@@ -40,13 +40,14 @@ import TextGenerateEffect from '~/components/ui/TextGenerateEffect.vue'
                 <img class="pointer" src="/app-store.svg" width="150" alt="App store">
               </NuxtLink>
 
-              <a
+              <NuxtLink
                 class="tx-bg-secondary flex transform items-center gap-2 rounded-md px-5 py-3 text-sm text-white font-semibold shadow-sm transition duration-500 ease-in-out hover:scale-110 hover:transform hover:-translate-y-1"
-                href="/TransactX.apk" download
+                href="https://play.google.com/store/apps/details?id=com.transactx.app"
+                target="_blank"
               >
                 <img class="pointer" src="/google-icon.svg" alt="Play store">Get
                 on Android
-              </a>
+              </NuxtLink>
             </div>
           </div>
         </div>

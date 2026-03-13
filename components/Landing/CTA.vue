@@ -26,13 +26,13 @@
               <img class="h-5 w-auto" src="/apple-icon.svg" alt="App store">Get on iPhone
             </NuxtLink>
 
-            <a
+            <NuxtLink
               class="tx-bg-secondary flex transform items-center gap-2 rounded-md px-5 py-3 text-sm text-white font-semibold shadow-sm transition duration-500 ease-in-out hover:scale-110 hover:transform hover:-translate-y-1"
-              href="/TransactX.apk" download
+              href="https://play.google.com/store/apps/details?id=com.transactx.app"
             >
               <img class="h-5 w-auto" src="/google-icon.svg" alt="Play store">Get
               on Android
-            </a>
+            </NuxtLink>
           </div>
         </div>
         <div class="relative mt-16 h-80 lg:mt-8" data-aos="fade-left" data-aos-delay="1000" data-aos-duration="1000">
