@@ -51,7 +51,7 @@ export default defineNuxtConfig({
     },
     prerender: {
       crawlLinks: true,
-      routes: ['/', '/privacy-policy', '/support', '/marketing'],
+      routes: ['/', '/privacy-policy', '/support', '/marketing', '/career'],
     },
     compressPublicAssets: true,
   },

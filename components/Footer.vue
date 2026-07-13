@@ -40,9 +40,14 @@
                     Marketing
                   </NuxtLink>
                 </li>
-                <li>
+                <li class="mb-4">
                   <NuxtLink href="/support" class="hover:underline">
                     Support
+                  </NuxtLink>
+                </li>
+                <li>
+                  <NuxtLink href="/career" class="hover:underline">
+                    Careers
                   </NuxtLink>
                 </li>
               </ul>
