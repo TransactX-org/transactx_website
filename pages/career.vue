@@ -166,7 +166,7 @@ async function submitApplication() {
                       What we're looking for
                     </h4>
                     <ul class="ml-4 list-disc list-inside space-y-1">
-                      <li>Solid experience building backend services (Laravel PHP)</li>
+                      <li>Solid experience building backend services (Laravel PHP, PostgreSQL)</li>
                       <li>Experience with relational databases and API design</li>
                       <li>Understanding of security best practices, especially around financial data</li>
                       <li>Comfortable working in a fast-moving startup environment</li>

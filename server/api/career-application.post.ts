@@ -72,7 +72,11 @@ export default defineEventHandler(async (event) => {
     },
   })
 
-  const to = process.env.CAREER_APPLICATION_TO || 'admin@mytransactx.com'
+  const to = process.env.CAREER_APPLICATION_TO
+
+  if (!to) {
+    throw createError({ statusCode: 500, statusMessage: 'Career application recipient is not configured' })
+  }
 
   await transporter.sendMail({
     from: `"TransactX Careers" <${process.env.MAIL_USERNAME}>`,
