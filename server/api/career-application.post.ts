@@ -1,5 +1,6 @@
 import nodemailer from 'nodemailer'
 
+const APPLICATIONS_OPEN = false
 const ALLOWED_RESUME_TYPES = new Set([
   'application/pdf',
   'application/msword',
@@ -13,6 +14,10 @@ function stripLineBreaks(value: string) {
 }
 
 export default defineEventHandler(async (event) => {
+  if (!APPLICATIONS_OPEN) {
+    throw createError({ statusCode: 410, statusMessage: 'Applications for this role are closed' })
+  }
+
   const parts = await readMultipartFormData(event)
 
   if (!parts) {

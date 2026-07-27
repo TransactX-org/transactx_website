@@ -7,6 +7,7 @@ useHead({
 })
 
 const ROLE_TITLE = 'Backend Developer'
+const APPLICATIONS_OPEN = false
 const MAX_RESUME_SIZE = 5 * 1024 * 1024
 const ALLOWED_RESUME_EXTENSIONS = ['.pdf', '.doc', '.docx']
 
@@ -128,8 +129,11 @@ async function submitApplication() {
                   <h3 class="text-xl text-gray-900 font-semibold">
                     {{ ROLE_TITLE }}
                   </h3>
-                  <span class="rounded-full bg-blue-600 px-3 py-1 text-xs text-white font-medium">
-                    Hiring now
+                  <span
+                    class="rounded-full px-3 py-1 text-xs text-white font-medium"
+                    :class="APPLICATIONS_OPEN ? 'bg-blue-600' : 'bg-gray-500'"
+                  >
+                    {{ APPLICATIONS_OPEN ? 'Hiring now' : 'Applications closed' }}
                   </span>
                 </div>
                 <p class="mb-4 text-sm text-gray-600">
@@ -183,95 +187,106 @@ async function submitApplication() {
                 Apply for {{ ROLE_TITLE }}
               </h2>
 
-              <p class="mb-6 text-gray-700">
-                Fill in the form below to submit your application. We'll review your submission and reach out if we think you're a good fit for the role.
-              </p>
+              <div v-if="!APPLICATIONS_OPEN" class="rounded-lg bg-gray-100 p-6 text-center">
+                <p class="text-gray-700 font-medium">
+                  We're no longer accepting applications for this role.
+                </p>
+                <p class="mt-2 text-sm text-gray-600">
+                  Thanks to everyone who applied. Check back here for future openings.
+                </p>
+              </div>
 
-              <form class="space-y-5" @submit.prevent="submitApplication">
-                <div class="grid gap-5 sm:grid-cols-2">
+              <template v-else>
+                <p class="mb-6 text-gray-700">
+                  Fill in the form below to submit your application. We'll review your submission and reach out if we think you're a good fit for the role.
+                </p>
+
+                <form class="space-y-5" @submit.prevent="submitApplication">
+                  <div class="grid gap-5 sm:grid-cols-2">
+                    <div>
+                      <label for="fullName" class="mb-1 block text-sm text-gray-700 font-medium">Full name *</label>
+                      <input
+                        id="fullName"
+                        v-model="form.fullName"
+                        type="text"
+                        required
+                        class="w-full border border-gray-300 rounded-md px-3 py-2 text-gray-900 focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500"
+                      >
+                    </div>
+                    <div>
+                      <label for="email" class="mb-1 block text-sm text-gray-700 font-medium">Email *</label>
+                      <input
+                        id="email"
+                        v-model="form.email"
+                        type="email"
+                        required
+                        class="w-full border border-gray-300 rounded-md px-3 py-2 text-gray-900 focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500"
+                      >
+                    </div>
+                    <div>
+                      <label for="phone" class="mb-1 block text-sm text-gray-700 font-medium">Phone</label>
+                      <input
+                        id="phone"
+                        v-model="form.phone"
+                        type="tel"
+                        class="w-full border border-gray-300 rounded-md px-3 py-2 text-gray-900 focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500"
+                      >
+                    </div>
+                    <div>
+                      <label for="linkedin" class="mb-1 block text-sm text-gray-700 font-medium">LinkedIn / Portfolio</label>
+                      <input
+                        id="linkedin"
+                        v-model="form.linkedin"
+                        type="url"
+                        placeholder="https://"
+                        class="w-full border border-gray-300 rounded-md px-3 py-2 text-gray-900 focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500"
+                      >
+                    </div>
+                  </div>
+
                   <div>
-                    <label for="fullName" class="mb-1 block text-sm text-gray-700 font-medium">Full name *</label>
+                    <label for="resume" class="mb-1 block text-sm text-gray-700 font-medium">Resume / CV *</label>
                     <input
-                      id="fullName"
-                      v-model="form.fullName"
-                      type="text"
+                      id="resume"
+                      type="file"
+                      accept=".pdf,.doc,.docx"
+                      required
+                      class="block w-full text-sm text-gray-700 file:mr-4 file:border-0 file:rounded-md file:bg-gray-100 file:px-4 file:py-2 file:text-sm file:text-gray-700 file:font-medium hover:file:bg-gray-200"
+                      @change="onResumeChange"
+                    >
+                    <p class="mt-1 text-xs text-gray-500">
+                      PDF or Word document, up to 5MB.
+                    </p>
+                  </div>
+
+                  <div>
+                    <label for="message" class="mb-1 block text-sm text-gray-700 font-medium">Why are you a good fit? *</label>
+                    <textarea
+                      id="message"
+                      v-model="form.message"
+                      rows="5"
                       required
                       class="w-full border border-gray-300 rounded-md px-3 py-2 text-gray-900 focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500"
-                    >
+                    />
                   </div>
-                  <div>
-                    <label for="email" class="mb-1 block text-sm text-gray-700 font-medium">Email *</label>
-                    <input
-                      id="email"
-                      v-model="form.email"
-                      type="email"
-                      required
-                      class="w-full border border-gray-300 rounded-md px-3 py-2 text-gray-900 focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500"
-                    >
-                  </div>
-                  <div>
-                    <label for="phone" class="mb-1 block text-sm text-gray-700 font-medium">Phone</label>
-                    <input
-                      id="phone"
-                      v-model="form.phone"
-                      type="tel"
-                      class="w-full border border-gray-300 rounded-md px-3 py-2 text-gray-900 focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500"
-                    >
-                  </div>
-                  <div>
-                    <label for="linkedin" class="mb-1 block text-sm text-gray-700 font-medium">LinkedIn / Portfolio</label>
-                    <input
-                      id="linkedin"
-                      v-model="form.linkedin"
-                      type="url"
-                      placeholder="https://"
-                      class="w-full border border-gray-300 rounded-md px-3 py-2 text-gray-900 focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500"
-                    >
-                  </div>
-                </div>
 
-                <div>
-                  <label for="resume" class="mb-1 block text-sm text-gray-700 font-medium">Resume / CV *</label>
-                  <input
-                    id="resume"
-                    type="file"
-                    accept=".pdf,.doc,.docx"
-                    required
-                    class="block w-full text-sm text-gray-700 file:mr-4 file:border-0 file:rounded-md file:bg-gray-100 file:px-4 file:py-2 file:text-sm file:text-gray-700 file:font-medium hover:file:bg-gray-200"
-                    @change="onResumeChange"
-                  >
-                  <p class="mt-1 text-xs text-gray-500">
-                    PDF or Word document, up to 5MB.
+                  <p v-if="errorMessage" class="text-sm text-red-700">
+                    {{ errorMessage }}
                   </p>
-                </div>
 
-                <div>
-                  <label for="message" class="mb-1 block text-sm text-gray-700 font-medium">Why are you a good fit? *</label>
-                  <textarea
-                    id="message"
-                    v-model="form.message"
-                    rows="5"
-                    required
-                    class="w-full border border-gray-300 rounded-md px-3 py-2 text-gray-900 focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500"
-                  />
-                </div>
+                  <button
+                    type="submit"
+                    :disabled="status === 'submitting'"
+                    class="w-full rounded-md bg-black px-6 py-3 text-white font-medium transition-colors duration-200 hover:bg-gray-800 disabled:cursor-not-allowed disabled:opacity-60 sm:w-auto"
+                  >
+                    {{ status === 'submitting' ? 'Sending...' : 'Send Application' }}
+                  </button>
 
-                <p v-if="errorMessage" class="text-sm text-red-700">
-                  {{ errorMessage }}
-                </p>
-
-                <button
-                  type="submit"
-                  :disabled="status === 'submitting'"
-                  class="w-full rounded-md bg-black px-6 py-3 text-white font-medium transition-colors duration-200 hover:bg-gray-800 disabled:cursor-not-allowed disabled:opacity-60 sm:w-auto"
-                >
-                  {{ status === 'submitting' ? 'Sending...' : 'Send Application' }}
-                </button>
-
-                <p v-if="status === 'success'" class="text-sm text-green-700">
-                  Thanks! Your application has been sent — we'll be in touch if it's a match.
-                </p>
-              </form>
+                  <p v-if="status === 'success'" class="text-sm text-green-700">
+                    Thanks! Your application has been sent — we'll be in touch if it's a match.
+                  </p>
+                </form>
+              </template>
             </section>
           </div>
         </div>
